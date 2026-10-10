@@ -1,0 +1,34 @@
+path: /book-a-call/
+nav_label: Book a call
+title: Book a call with Todd Irvine | REALTOR® with Real Broker, Grande Prairie
+description: Book a free call with Todd Irvine, REALTOR® with Real Broker in Grande Prairie. By video, phone or in person, at a time that works for you.
+
+heading: Book a call
+intro: Pick a time that works for you. We can talk by video, by phone or in person, whether you're buying, selling or moving here for work.
+
+sections:
+  - id: pick-a-time
+    type: booking
+    heading: Pick a time
+    note: Your Google Calendar booking page goes here once it's set up. Until then, this box points people to your phone and the message form.
+
+  - id: what-we-cover
+    type: text
+    tone: stone
+    heading: What we'll talk about
+    body: |
+      We'll start with why you're moving and what a good result looks like for you. Then we'll go over your timeline, the areas that fit and your next steps.
+
+      The call is free, and there's no obligation.
+
+  - id: message
+    type: form
+    form: contact
+    heading: Prefer to send a message?
+    intro: Send me a note and I'll get back to you personally.
+
+  - id: reach
+    type: contact
+    heading: Or reach me directly
+
+closing: false

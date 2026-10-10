@@ -1,0 +1,26 @@
+path: /resources/
+nav_label: Resources
+title: Resources for moving to and living in Grande Prairie | Todd Irvine
+description: Practical guides for moving to and living in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge, from Todd Irvine, REALTOR® with Real Broker.
+
+heading: Resources
+intro: Practical guides for moving to and living in the Grande Prairie region.
+
+sections:
+  - id: guides
+    type: links
+    heading: Guides
+    items:
+      - title: New to Grande Prairie
+        text: What to set up when you move here, from health care and your driver's licence to utilities and schools.
+        url: /resources/new-to-grande-prairie/
+      - title: How buying works here
+        text: The steps from your first call to getting your keys.
+        url: /buyers/
+      - title: What's your home worth?
+        text: A free, personal home valuation within 24 hours.
+        url: /sellers/home-valuation/
+      - title: Medical professional relocation
+        text: Planning a move here for a healthcare job, from wherever you are now.
+        url: /medical-relocation/
+    note: Local recommendations (for example lenders, inspectors and movers) get added here after launch, with the wording checked with Real Broker first.

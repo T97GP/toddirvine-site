@@ -1,0 +1,57 @@
+<form class="lead-form" action="/api/lead" method="post">
+  <input type="hidden" name="form" value="contact">
+  <input type="hidden" name="page" value="{{ current_path }}">
+
+  {# Hidden from people; bots that fill it in get ignored. #}
+  <div class="lead-form__trap" aria-hidden="true">
+    <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+  </div>
+
+  <div class="lead-form__field">
+    <label for="c-name">Your name <span class="lead-form__req">required</span></label>
+    <input id="c-name" name="name" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="lead-form__field">
+    <label for="c-email">Email <span class="lead-form__req">required</span></label>
+    <input id="c-email" name="email" type="email" autocomplete="email" required>
+  </div>
+
+  <div class="lead-form__field">
+    <label for="c-phone">Phone</label>
+    <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+  </div>
+
+  <div class="lead-form__field">
+    <label for="c-topic">What can I help with?</label>
+    <select id="c-topic" name="topic">
+      <option value="">Choose one</option>
+      <option value="buying">Buying</option>
+      <option value="selling">Selling</option>
+      <option value="both">Buying and selling</option>
+      <option value="medical">Moving here for a healthcare job</option>
+      <option value="other">Something else</option>
+    </select>
+  </div>
+
+  <div class="lead-form__field lead-form__field--wide">
+    <label for="c-message">Your message</label>
+    <textarea id="c-message" name="message" rows="5"
+              placeholder="Where you're headed, your timing, and the best way to reach you"></textarea>
+  </div>
+
+  <div class="lead-form__field lead-form__field--wide lead-form__consent">
+    <input id="c-consent" name="updates_consent" type="checkbox" value="yes">
+    <label for="c-consent">Also send me market updates and new listings by email. You can unsubscribe at any time.</label>
+  </div>
+
+  <p class="lead-form__privacy lead-form__field--wide">
+    I'll use these details to reply to you and help with what you've asked about.
+    See the <a href="{{ site.privacy_url }}">privacy policy</a>.
+    {{ site.agent.licensed_name }}, {{ site.brokerage.name }}, {{ site.brokerage.street }}, {{ site.brokerage.city }}, {{ site.brokerage.province }} {{ site.brokerage.postal }}.
+  </p>
+
+  <p class="lead-form__field--wide">
+    <button class="button button--primary button--large" type="submit">Send my message</button>
+  </p>
+</form>

@@ -1,0 +1,96 @@
+path: /privacy/
+nav_label: Privacy policy
+title: Privacy policy | Todd Irvine, REALTOR® with Real Broker
+description: How Todd Irvine, REALTOR® with Real Broker in Grande Prairie, collects, uses and protects your personal information under Alberta's Personal Information Protection Act.
+
+heading: Privacy policy
+intro: How I collect, use and protect your personal information, in line with Alberta's Personal Information Protection Act (PIPA).
+dateline: Effective October 10, 2026
+
+sections:
+  - id: who
+    type: text
+    heading: Who I am
+    body: |
+      This website is run by Todd Richard Irvine, REALTOR®, licensed with Real Broker, 300-9835 101 Ave, Grande Prairie, Alberta T8V 5V4.
+
+      I'm responsible for the personal information collected through this website, and I'm the person to ask about this policy. Email [tirvinerealestate@gmail.com](mailto:tirvinerealestate@gmail.com) or call or text [587-343-7310](tel:+15873437310).
+    note: Have Real Broker review this policy before launch. They may want their own privacy policy linked, or their privacy officer named here.
+
+  - id: collect
+    type: text
+    heading: What I collect
+    body: |
+      - **What you enter in a form on this site:** your name, email, phone number, property address, timeline, message, and whether you'd like email updates.
+      - **What you enter when you book a call** through my Google Calendar booking page.
+      - **What you send me** by email, phone or text.
+      - **Technical information.** Cloudflare, which hosts this website, processes technical details such as IP addresses to deliver pages and protect the site from abuse. This site doesn't use advertising or tracking cookies.
+
+  - id: use
+    type: text
+    heading: How I use it
+    body: |
+      - To reply to you and follow up about what you asked for.
+      - To provide the services you ask for, such as a home valuation, a buyer consultation or help with a move.
+      - To send you market updates and new listings by email, **only if you ticked the box** asking for them. Every update email lets you unsubscribe.
+      - To meet the legal and regulatory requirements that apply to real estate professionals in Alberta.
+
+  - id: share
+    type: text
+    tone: stone
+    heading: Who I share it with
+    body: |
+      I never sell your personal information. I share it only:
+
+      - With **Real Broker**, the brokerage I'm licensed with, when needed to provide real estate services to you.
+      - With **service providers** that store or process it for me:
+          - Lofty, my client management system, which keeps your contact details and our history together;
+          - Google, for email and booking calls;
+          - Cloudflare, which hosts this website and passes form submissions on to me;
+          - Resend, which delivers form submissions to my email inbox.
+      - With others, such as a lender, lawyer, home inspector or another agent, **only with your permission** or as part of a transaction you've asked me to help with.
+      - When the law requires it.
+    note: Resend is listed because the direct lead email is being set up now. If you decide not to use it, I'll take it off this list.
+
+  - id: outside-canada
+    type: text
+    tone: stone
+    heading: Service providers outside Canada
+    body: |
+      Lofty, Google, Cloudflare and Resend may store or process your information in the United States and in other countries where they operate, for the purposes listed above. Information stored outside Canada may be subject to the laws of those countries.
+
+      You can ask me for written information about how these service providers handle personal information. Contact me using the details at the top of this page.
+
+  - id: choices
+    type: text
+    heading: Your choices
+    body: |
+      - **Unsubscribe** from update emails at any time, using the link in any update or by asking me.
+      - **Withdraw your consent** for how I use your information, with reasonable notice, unless a legal requirement means I have to keep it.
+      - **Ask what information I hold about you,** and ask me to correct it. Send the request by email. Under PIPA, I respond within 45 days, unless the time is extended as PIPA allows. If a fee applies to an access request, I'll tell you before any work starts.
+
+  - id: keep
+    type: text
+    heading: How long I keep it, and how I protect it
+    body: |
+      I keep personal information only as long as it's reasonably needed for the purposes above or for legal requirements. After that, it's securely destroyed or made anonymous.
+
+      I protect it with reasonable safeguards, including encrypted connections on this website, password-protected accounts, and access limited to the people and service providers named above. If a privacy breach ever creates a real risk of significant harm to anyone, I'll report it to the Office of the Information and Privacy Commissioner of Alberta, as PIPA requires.
+
+  - id: questions
+    type: text
+    tone: stone
+    heading: Questions or concerns
+    body: |
+      Contact me first and I'll do my best to sort it out. If you're not satisfied, you can contact the **Office of the Information and Privacy Commissioner of Alberta**:
+
+      - Phone: [780-422-6860](tel:+17804226860), or toll free [1-888-878-4044](tel:+18888784044)
+      - Email: [generalinfo@oipc.ab.ca](mailto:generalinfo@oipc.ab.ca)
+      - Website: [oipc.ab.ca](https://oipc.ab.ca)
+      - Address: 410-9925 109 Street NW, Edmonton, Alberta T5K 2J8
+
+  - id: changes
+    type: text
+    heading: Changes to this policy
+    body: |
+      If I change this policy, I'll update this page and the date at the top.

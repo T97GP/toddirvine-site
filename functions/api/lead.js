@@ -1,12 +1,27 @@
-// Cloudflare Pages Function: receives the site's forms at POST /api/lead
-// and creates the lead in Lofty, assigned to Todd, with Lofty's new-lead alert email.
+// Cloudflare Pages Function: receives the site's forms at POST /api/lead.
+// Every lead goes two places at once:
+//   1. Lofty, assigned to Todd, with Lofty's new-lead alert email.
+//   2. An email straight to Todd's inbox, sent through Resend.
+// The visitor sees the thank-you page if at least one of the two worked.
 //
-// Needs one encrypted environment variable in the Cloudflare Pages project:
-//   LOFTY_API_KEY   (Lofty: Settings > Integrations > API)
+// Encrypted environment variables in the Cloudflare Pages project:
+//   LOFTY_API_KEY    Lofty: Settings > Integrations > API
+//   RESEND_API_KEY   Resend: API Keys (sending access is enough)
+//   LEAD_EMAIL_TO    optional; defaults to the address in lib/lead.js
+// Whichever key is missing, that route is simply skipped.
 //
 // Lofty API reference: https://developer.lofty.com/api-reference/leads/create-lead
+// Resend API reference: https://resend.com/docs/api-reference/emails/send-email
 
-import { FORMS, ERROR_PAGE, LOFTY_LEADS_URL, buildLead } from "../../lib/lead.js";
+import {
+  FORMS,
+  ERROR_PAGE,
+  LOFTY_LEADS_URL,
+  RESEND_EMAILS_URL,
+  LEAD_EMAIL_TO,
+  buildLead,
+  buildLeadEmail,
+} from "../../lib/lead.js";
 
 export async function onRequestPost({ request, env }) {
   const origin = new URL(request.url).origin;
@@ -33,6 +48,7 @@ export async function onRequestPost({ request, env }) {
     phone: field("phone", 30),
     address: field("address", 200),
     timeline: field("timeline", 20),
+    topic: field("topic", 20),
     message: field("message", 1500),
     consent: data.get("updates_consent") === "yes",
     page: field("page", 200),
@@ -43,30 +59,46 @@ export async function onRequestPost({ request, env }) {
     return redirect(ERROR_PAGE);
   }
 
-  if (!env.LOFTY_API_KEY) {
-    console.error("LOFTY_API_KEY is not set");
+  const now = new Date();
+  const sends = [];
+
+  if (env.LOFTY_API_KEY) {
+    sends.push(
+      post("Lofty", LOFTY_LEADS_URL, `token ${env.LOFTY_API_KEY}`, buildLead(form, values, now)),
+    );
+  }
+
+  if (env.RESEND_API_KEY) {
+    const to = env.LEAD_EMAIL_TO || LEAD_EMAIL_TO;
+    sends.push(
+      post("Resend", RESEND_EMAILS_URL, `Bearer ${env.RESEND_API_KEY}`, buildLeadEmail(form, values, { to, now })),
+    );
+  }
+
+  if (!sends.length) {
+    console.error("Neither LOFTY_API_KEY nor RESEND_API_KEY is set");
     return redirect(ERROR_PAGE);
   }
 
-  const lead = buildLead(form, values);
+  const results = await Promise.all(sends);
+  return redirect(results.some(Boolean) ? form.thanks : ERROR_PAGE);
+}
 
+// POST JSON and report whether it worked. Never throws.
+async function post(name, url, authorization, body) {
   try {
-    const res = await fetch(LOFTY_LEADS_URL, {
+    const res = await fetch(url, {
       method: "POST",
-      headers: {
-        Authorization: `token ${env.LOFTY_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(lead),
+      headers: { Authorization: authorization, "Content-Type": "application/json" },
+      body: JSON.stringify(body),
     });
     if (!res.ok) {
-      console.error("Lofty rejected the lead", res.status, await res.text());
-      return redirect(ERROR_PAGE);
+      console.error(`${name} rejected the lead`, res.status, await res.text());
+      return false;
     }
+    return true;
   } catch (err) {
-    console.error("Could not reach Lofty", err);
-    return redirect(ERROR_PAGE);
+    console.error(`Could not reach ${name}`, err);
+    return false;
   }
-
-  return redirect(form.thanks);
 }

@@ -1,29 +1,37 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import results_grid, preview_note %}
+{% from "partials/macros.html" import results_grid, preview_note, picture %}
 
 {% block content %}
 <section class="page-hero">
-  <div class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="/">Home</a></li>
-        {% if page.parent is defined %}<li><a href="{{ page.parent.url }}">{{ page.parent.label }}</a></li>{% endif %}
-        <li aria-current="page">{{ page.nav_label }}</li>
-      </ol>
-    </nav>
-    <h1>{{ page.heading }}</h1>
-    <p class="page-hero__intro">{{ page.intro }}</p>
-    {% if page.actions is defined %}
-    <p class="hero__actions">
-      {% for action in page.actions %}
-      <a class="button button--large {{ 'button--primary' if loop.first else 'button--quiet' }}" href="{{ action.url }}">{{ action.label }}</a>
-      {% endfor %}
-    </p>
+  <div class="wrap{% if page.photo is defined %} page-hero__grid{% endif %}">
+    <div>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          {% if page.parent is defined %}<li><a href="{{ page.parent.url }}">{{ page.parent.label }}</a></li>{% endif %}
+          <li aria-current="page">{{ page.nav_label }}</li>
+        </ol>
+      </nav>
+      <h1>{{ page.heading }}</h1>
+      <p class="page-hero__intro">{{ page.intro }}</p>
+      {% if page.dateline is defined %}<p class="page-hero__dateline">{{ page.dateline }}</p>{% endif %}
+      {% if page.actions is defined %}
+      <p class="hero__actions">
+        {% for action in page.actions %}
+        <a class="button button--large {{ 'button--primary' if loop.first else 'button--quiet' }}" href="{{ action.url }}">{{ action.label }}</a>
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+    {% if page.photo is defined %}
+    <figure class="page-hero__photo">
+      {{ picture(page.photo, page.photo_alt, "(max-width: 56rem) 22rem, 26rem", eager=true) }}
+    </figure>
     {% endif %}
   </div>
 </section>
 
-{% for s in page.sections %}
+{% for s in page.sections if not (site.live and s.preview_only is defined) %}
 <section class="page-section{% if s.tone is defined %} page-section--{{ s.tone }}{% endif %}" aria-labelledby="{{ s.id }}">
   <div class="wrap">
     <h2 id="{{ s.id }}">{{ s.heading }}</h2>
@@ -75,6 +83,27 @@
         <li><span class="contact-list__label">Email</span> <a href="mailto:{{ site.agent.email }}">{{ site.agent.email }}</a></li>
       </ul>
 
+    {% elif s.type == "booking" %}
+      {% if site.booking.embed_src %}
+      <div class="booking-embed">
+        <iframe src="{{ site.booking.embed_src }}" title="Pick a time to talk with {{ site.agent.name }}" loading="lazy"></iframe>
+      </div>
+      <p class="booking-embed__fallback">Calendar not loading?
+        {% if site.booking.page_url %}<a href="{{ site.booking.page_url }}">Open the booking page</a>, or call{% else %}Call{% endif %}
+        or text me at <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a>.</p>
+      {% else %}
+      <div class="booking-placeholder">
+        <p>Call or text me at <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a>, or send a message below, and we'll find a time that works.</p>
+      </div>
+      {% endif %}
+
+    {% elif s.type == "sources" %}
+      <ul class="sources">
+        {% for src in s['items'] %}
+        <li><a href="{{ src.url }}">{{ src.title }}</a>{% if src.publisher is defined %}, {{ src.publisher }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+
     {% elif s.type == "faq" %}
       <div class="faq">
         {% for item in s['items'] %}
@@ -91,7 +120,9 @@
 </section>
 {% endfor %}
 
+{% if page.closing is not defined or page.closing %}
 {% include "partials/closing.html" %}
+{% endif %}
 
 {% set faqs = page.sections | selectattr("type", "equalto", "faq") | list %}
 {% if faqs %}

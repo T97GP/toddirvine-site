@@ -1,0 +1,55 @@
+path: /about/
+nav_label: About
+title: About Todd Irvine | REALTOR® with Real Broker in Grande Prairie
+description: Todd Irvine is a REALTOR® with Real Broker in Grande Prairie, Alberta, working with buyers and sellers across Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+
+heading: About Todd Irvine
+intro: I'm a REALTOR® with Real Broker in Grande Prairie, working with buyers and sellers across Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+photo: todd-portrait-seated
+photo_alt: Todd Irvine, REALTOR® with Real Broker, seated and smiling
+actions:
+  - label: Book a call
+    url: /book-a-call/
+  - label: Call or text 587-343-7310
+    url: tel:+15873437310
+
+sections:
+  - id: how
+    type: text
+    heading: How I work
+    body: |
+      Before we look at a single house or set a price, I want to know why you're moving. What's behind it, why it matters now, and what changes for you once it's done. Then we build the plan together, around your timeline.
+
+      Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers backed by facts, and a plan that puts your best interests first.
+    note: Want to add your background, like what you did before real estate, or something personal, like family or what you do outside work? Tell me what you'd like said and I'll add it.
+
+  - id: promises
+    type: promises
+    tone: stone
+    heading: What you can count on
+    items:
+      - Free buyer consultations
+      - Free home valuations within 24 hours
+      - Weekly updates for sellers
+      - Seller marketing paid by me
+      - Strategy sessions by Zoom, phone or in person
+      - Video calls and video walkthroughs if you're moving from out of town
+
+  - id: results
+    type: results
+    heading: Recent results
+    keys: [uk-doctors, bc-seller]
+
+  - id: reviews
+    type: text
+    preview_only: true
+    heading: What clients say
+    body: ""
+    note: Google reviews and the U.K. doctors' quote go here once you have them (reminder set for Monday, October 12). This section stays hidden on the live site until then.
+
+  - id: licence
+    type: text
+    tone: stone
+    heading: Licensed with Real Broker
+    body: |
+      I'm licensed in Alberta as Todd Richard Irvine, REALTOR®, with Real Broker, 300-9835 101 Ave, Grande Prairie, Alberta T8V 5V4. Office: [855-623-6900](tel:+18556236900).

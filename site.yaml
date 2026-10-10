@@ -42,6 +42,13 @@ nav:
 book_call_url: /book-a-call/
 privacy_url: /privacy/
 
+# Google Calendar booking page (Calendar > your appointment schedule > Share).
+# embed_src: the address inside src="..." from the "Website embed" code.
+# page_url: the booking page link, used if the calendar doesn't load.
+booking:
+  embed_src: ""
+  page_url: ""
+
 # Closing call to action at the bottom of every page (a page can override it).
 closing:
   heading: Tell me where you're headed, and we'll plan the next step together.

@@ -1,0 +1,126 @@
+path: /resources/new-to-grande-prairie/
+nav_label: New to Grande Prairie
+parent:
+  label: Resources
+  url: /resources/
+title: New to Grande Prairie? What to set up when you move | Todd Irvine
+description: Health care, your driver's licence and vehicle, utilities and schools. What to set up when you move to Grande Prairie, Alberta, with links to the official pages.
+
+heading: New to Grande Prairie? Here's what to set up.
+intro: The main things to sort out when you move here from another province or country, with links to the official pages so you can check the details for your situation.
+dateline: Last checked October 10, 2026
+
+sections:
+  - id: at-a-glance
+    type: promises
+    heading: At a glance
+    items:
+      - Apply for Alberta health care within 3 months
+      - Exchange your driver's licence within 90 days
+      - Register your vehicle in Alberta within 90 days
+      - Set up water, sewer and garbage
+      - Choose an electricity and natural gas retailer
+      - Register your kids for school
+
+  - id: health
+    type: text
+    heading: Health care
+    body: |
+      **Apply for Alberta Health Care Insurance Plan coverage within 3 months of moving here.** If you're coming from another province or territory, coverage starts on the first day of the third month after you become a resident. For example, if you move here on July 12, your coverage starts October 1. Until then, keep using your health card from your previous province. ([Alberta.ca](https://www.alberta.ca/ahcip-moving-to-alberta))
+
+      **Moving from outside Canada?** You may be covered from the day you become a resident, but only if you apply within 3 months. Take your immigration documents, such as a work permit or permanent resident card, to an Alberta registry agent. ([Alberta.ca](https://www.alberta.ca/ahcip-moving-to-alberta))
+
+      **Finding a family doctor.** Search [Alberta Find a Provider](https://albertafindaprovider.ca) for family doctors and nurse practitioners taking new patients. Listings are refreshed at least once a month, so it's worth checking back. For health advice, call 811.
+
+      **Hospital.** Grande Prairie Regional Hospital, at 11205 110 Street, has a 24/7 emergency department. ([Alberta Health Services](https://www.albertahealthservices.ca/FindHealth/facility.aspx?id=1071132))
+
+  - id: driving
+    type: text
+    tone: stone
+    heading: Your driver's licence and vehicle
+    body: |
+      **Exchange your driver's licence within 90 days of becoming a resident.** Take it to an Alberta registry agent, with proof that you live in Alberta and proof of your legal status in Canada. Your old licence is surrendered and won't be returned. Licences from the United States, and from countries that have an exchange agreement with Alberta, can usually be exchanged without a road test. ([Alberta.ca](https://www.alberta.ca/exchange-non-alberta-licences))
+
+      **Register your vehicle in Alberta within 90 days of moving here.** You'll need Alberta insurance first. A vehicle bought elsewhere in Canada may need an Alberta out-of-province inspection before it can be registered, so ask the registry agent whether yours does. ([Alberta.ca](https://www.alberta.ca/register-vehicle))
+
+  - id: utilities
+    type: text
+    heading: Utilities
+    body: |
+      **Water, sewer and garbage.** In the City of Grande Prairie, Aquatera Utilities provides water, wastewater and garbage collection ([City of Grande Prairie Utility Bylaw C-1365](https://cityofgp.com/sites/default/files/2026-01/C-1365%20Utility%20Bylaw%20-%20Office%20Consolidation%20-%20Effective%20March%201,%202026.pdf)). Aquatera also provides water and sewer in Clairmont ([County of Grande Prairie](https://www.countygp.ab.ca/home-property-environment/water-and-sewer-services/apply-for-water-or-sewer-services/)) and sets up utilities in Sexsmith ([Town of Sexsmith](https://sexsmith.ca/welcome-to-new-residents)). Open or transfer your account [on Aquatera's website](https://www.aquatera.ca/billing-rates-payments/open-close-transfer-account), by email at myaccount@aquatera.ca or by phone at 780-538-0340.
+
+      In Beaverlodge or on a rural property, check with the [Town of Beaverlodge](https://beaverlodge.ca) or the [County of Grande Prairie](https://www.countygp.ab.ca).
+
+      **Recycling.** Since October 1, 2026, Circular Materials runs residential recycling in the City of Grande Prairie. [Their Grande Prairie page](https://www.circularmaterials.ca/resident-communities/grande-prairie/) has the collection calendar, and their free app shows your pickup schedule.
+
+      **Electricity and natural gas.** In Alberta you choose which retailer you buy electricity and natural gas from. Your distribution company is set by where you live. If you don't sign with a retailer, you're placed on your area's default rate. The Utilities Consumer Advocate has a [list of retailers](https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/) and a [cost comparison tool](https://ucahelps.alberta.ca/cost-comparison-tool/), and you can reach them at 310-4822 in Alberta. ([Utilities Consumer Advocate](https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/))
+
+  - id: schools
+    type: text
+    tone: stone
+    heading: Schools
+    body: |
+      Each school division has its own registration. Ask each one about school boundaries for the homes you're considering, since that's worth knowing before you buy.
+
+      - [Grande Prairie Public School Division](https://www.gppsd.ab.ca/registration): public schools in the city, with French Immersion, Montessori and International Baccalaureate programs.
+      - [Grande Prairie & District Catholic Schools](https://www.gpcsd.ca/apps/pages/StudentRegistration): Catholic schools in Grande Prairie, Sexsmith and Beaverlodge, with French Immersion.
+      - [Peace Wapiti Public School Division](https://www.pwpsd.ca/apps/pages/index.jsp?uREC_ID=1100499&type=d): public schools in the communities around the city, including Clairmont, Sexsmith and Beaverlodge.
+      - [NorthWest Francophone Education Region](https://csno.ab.ca): École Nouvelle Frontière, Grande Prairie's francophone school.
+
+      For diplomas, certificates, university transfer and trades, [Northwestern Polytechnic](https://www.nwpolytech.ca/) is based in Grande Prairie. ([City of Grande Prairie](https://cityofgp.com/economic-development/lifestyle-community/education))
+
+  - id: next
+    type: links
+    heading: Planning a move here?
+    items:
+      - title: Medical professional relocation
+        text: Moving here for a healthcare job? Plan your home search by video or phone before you arrive.
+        url: /medical-relocation/
+      - title: How buying works here
+        text: The steps from your first call to getting your keys.
+        url: /buyers/
+
+  - id: sources
+    type: sources
+    heading: Sources
+    intro: Checked October 10, 2026. Rules and contacts change, so confirm the details with each organization.
+    items:
+      - title: Apply for health care coverage if you move to Alberta
+        publisher: Government of Alberta
+        url: https://www.alberta.ca/ahcip-moving-to-alberta
+      - title: Finding a family doctor in Alberta
+        publisher: Alberta Find a Provider
+        url: https://albertafindaprovider.ca/news/finding-a-family-doctor-in-alberta
+      - title: Grande Prairie Regional Hospital
+        publisher: Alberta Health Services
+        url: https://www.albertahealthservices.ca/FindHealth/facility.aspx?id=1071132
+      - title: Exchange a licence from outside Alberta
+        publisher: Government of Alberta
+        url: https://www.alberta.ca/exchange-non-alberta-licences
+      - title: Register a vehicle in Alberta
+        publisher: Government of Alberta
+        url: https://www.alberta.ca/register-vehicle
+      - title: Utility Bylaw C-1365 (office consolidation, effective March 1, 2026)
+        publisher: City of Grande Prairie
+        url: https://cityofgp.com/sites/default/files/2026-01/C-1365%20Utility%20Bylaw%20-%20Office%20Consolidation%20-%20Effective%20March%201,%202026.pdf
+      - title: Apply for water or sewer services
+        publisher: County of Grande Prairie
+        url: https://www.countygp.ab.ca/home-property-environment/water-and-sewer-services/apply-for-water-or-sewer-services/
+      - title: Welcome to new residents
+        publisher: Town of Sexsmith
+        url: https://sexsmith.ca/welcome-to-new-residents
+      - title: Open, close or transfer account
+        publisher: Aquatera
+        url: https://www.aquatera.ca/billing-rates-payments/open-close-transfer-account
+      - title: Grande Prairie recycling
+        publisher: Circular Materials
+        url: https://www.circularmaterials.ca/resident-communities/grande-prairie/
+      - title: Retailers and distributors
+        publisher: Utilities Consumer Advocate
+        url: https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/
+      - title: Education
+        publisher: City of Grande Prairie
+        url: https://cityofgp.com/economic-development/lifestyle-community/education
+      - title: Peace Wapiti Public School Division
+        publisher: Peace Wapiti Public School Division
+        url: https://www.pwpsd.ca/
