@@ -3,7 +3,7 @@
 
 live: false            # false = preview mode: pages are hidden from search engines and preview notes show
 base_url: https://toddirvine.ca
-accent: green          # green or blue (picked from the mockups)
+accent: blue           # chosen October 10, 2026 (green or blue)
 
 agent:
   name: Todd Irvine
