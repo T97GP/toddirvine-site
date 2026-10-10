@@ -198,7 +198,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.25rem 2.5rem;
+  gap: 0.25rem 2rem;
   margin: 0 auto;
   padding-block: 0.8rem;
   list-style: none;

@@ -28,8 +28,10 @@ nav:
     url: /sellers/
   - label: Areas
     url: /areas/
-  - label: Relocating
-    url: /relocating/
+  - label: Medical professional relocation
+    url: /medical-relocation/
+  - label: Resources
+    url: /resources/
   - label: About
     url: /about/
 

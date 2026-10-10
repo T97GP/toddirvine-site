@@ -1,11 +1,11 @@
 # Homepage content. Edit the words here; the layout stays the same.
 
 title: Grande Prairie realtor | Todd Irvine, Real Broker
-description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge? Todd Irvine replies within the hour. Free buyer consultations and free home valuations within 24 hours.
+description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge? Free buyer consultations and free home valuations within 24 hours from Todd Irvine, REALTOR® with Real Broker.
 
 hero:
   headline: Buying or selling in Grande Prairie? Let's build the right strategy to accomplish your real estate goals today.
-  supporting: Replies within the hour. No pressure. Serving Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+  supporting: Serving Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
   photo: todd-portrait-standing
   photo_alt: Todd Irvine, REALTOR® with Real Broker in Grande Prairie
   preview_note: A local Grande Prairie photo from the photographer replaces this portrait.
@@ -19,10 +19,10 @@ paths:
     text: A free valuation within 24 hours, marketing paid by me, and an update from me every week.
     link_text: See the seller plan
     url: /sellers/
-  - heading: Relocating for work
-    text: Moving here for a healthcare or other job? Plan your purchase by video call before you arrive.
-    link_text: Plan a move
-    url: /relocating/
+  - heading: Medical professional relocation
+    text: Moving here for a healthcare job? Plan your purchase by video or phone call before you arrive.
+    link_text: Plan your move
+    url: /medical-relocation/
 
 search:
   heading: Search homes for sale
@@ -31,7 +31,6 @@ search:
 promises:
   heading: What you can count on
   items:
-    - Replies within the hour
     - Free buyer consultations
     - Free home valuations within 24 hours
     - Weekly updates for sellers
