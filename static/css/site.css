@@ -549,6 +549,56 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 .faq__item[open] summary::after { content: "\2212"; }
 .faq__item .prose { padding-bottom: 1.25rem; color: var(--muted); }
 
+/* ---------- Forms ---------- */
+
+.lead-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  max-width: 48rem;
+  margin-top: 1.5rem;
+}
+.lead-form__field { display: flex; flex-direction: column; gap: 0.35rem; }
+.lead-form__field--wide { grid-column: 1 / -1; }
+.lead-form label { font-weight: 600; font-size: 1rem; }
+.lead-form__req { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+.lead-form input[type="text"],
+.lead-form input[type="email"],
+.lead-form input[type="tel"],
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--field);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+}
+.lead-form textarea { min-height: 7rem; resize: vertical; }
+.lead-form input:focus-visible,
+.lead-form select:focus-visible,
+.lead-form textarea:focus-visible { border-color: var(--accent); }
+
+.lead-form__consent { flex-direction: row; align-items: flex-start; gap: 0.75rem; }
+.lead-form__consent input { width: 1.25rem; height: 1.25rem; margin-top: 0.2rem; accent-color: var(--accent); flex: none; }
+.lead-form__consent label { font-weight: 400; }
+
+.lead-form__privacy { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.lead-form p { margin: 0; }
+
+.lead-form__trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-list { margin: 1rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.75rem; font-size: 1.2rem; }
+.contact-list__label { display: block; color: var(--muted); font-size: 0.95rem; }
+
 /* ---------- Phone action bar ---------- */
 
 .action-bar { display: none; }
@@ -606,6 +656,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 
   .results__grid { grid-template-columns: 1fr; }
   .checklist { grid-template-columns: 1fr; }
+  .lead-form { grid-template-columns: 1fr; }
 
   .site-footer__grid { grid-template-columns: 1fr; }
 

@@ -1,0 +1,16 @@
+path: /sellers/home-valuation/thanks/
+noindex: true
+nav_label: Request received
+parent:
+  label: Home valuation
+  url: /sellers/home-valuation/
+title: Valuation request received | Todd Irvine
+description: Your home valuation request reached Todd Irvine.
+
+heading: Thanks, your request is in.
+intro: I'll send your personal valuation within 24 hours. If anything changes in the meantime, you can reach me directly.
+
+sections:
+  - id: reach
+    type: contact
+    heading: Reach me directly

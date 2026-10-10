@@ -1,0 +1,13 @@
+path: /form-error/
+noindex: true
+nav_label: Form problem
+title: Your form didn't go through | Todd Irvine
+description: The form could not be sent. Contact Todd Irvine by phone, text or email.
+
+heading: Your form didn't go through.
+intro: A required field may have been missing, or something went wrong on my end. Please go back and try again, or call, text or email me and I'll take it from there.
+
+sections:
+  - id: reach
+    type: contact
+    heading: Reach me directly

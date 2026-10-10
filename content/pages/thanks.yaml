@@ -1,0 +1,13 @@
+path: /thanks/
+noindex: true
+nav_label: Message received
+title: Message received | Todd Irvine
+description: Your message reached Todd Irvine.
+
+heading: Thanks, your message is in.
+intro: I'll get back to you personally. If it's time-sensitive, call or text me.
+
+sections:
+  - id: reach
+    type: contact
+    heading: Reach me directly

@@ -15,6 +15,8 @@ Plain HTML loads fast and can be read by search engines and AI tools without run
 | `content/results.yaml` | Client results, shared by every page that shows them |
 | `templates/` | Page layouts (Jinja2) |
 | `static/` | CSS, the Lora heading font, logos and photos |
+| `functions/api/lead.js` | Receives form submissions at `/api/lead` and creates the lead in Lofty (Cloudflare Pages Function) |
+| `lib/lead.js` | The lead details sent to Lofty: assigned to Todd, source "ToddIrvine.ca", Lofty's new-lead alert on |
 | `dist/` | The built site (created by the build, not stored in Git) |
 
 ## Preview mode

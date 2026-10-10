@@ -7,7 +7,7 @@
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
   <link rel="canonical" href="{{ site.base_url }}{{ current_path }}">
-  {% if not site.live %}
+  {% if not site.live or page.noindex is defined %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
   <meta property="og:type" content="website">

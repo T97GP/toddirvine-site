@@ -66,6 +66,15 @@
     {% elif s.type == "results" %}
       {{ results_grid(results, s['keys']) }}
 
+    {% elif s.type == "form" %}
+      {% include "partials/forms/" ~ s.form ~ ".html" %}
+
+    {% elif s.type == "contact" %}
+      <ul class="contact-list">
+        <li><span class="contact-list__label">Call or text</span> <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a></li>
+        <li><span class="contact-list__label">Email</span> <a href="mailto:{{ site.agent.email }}">{{ site.agent.email }}</a></li>
+      </ul>
+
     {% elif s.type == "faq" %}
       <div class="faq">
         {% for item in s['items'] %}

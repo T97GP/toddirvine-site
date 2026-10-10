@@ -1,0 +1,39 @@
+path: /sellers/home-valuation/
+nav_label: Home valuation
+parent:
+  label: Sellers
+  url: /sellers/
+title: What's my home worth? Free home valuation in Grande Prairie | Todd Irvine
+description: Request a free, personal valuation of your home in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge. Todd Irvine sends it within 24 hours, with no obligation to list.
+
+heading: What's your home worth?
+intro: Tell me about your home and I'll send you a personal valuation within 24 hours, based on recent comparable sales. It's free, with no obligation to list.
+
+sections:
+  - id: request
+    type: form
+    form: valuation
+    heading: Request your free valuation
+
+  - id: next
+    type: steps
+    tone: stone
+    heading: What happens next
+    items:
+      - title: You send the form
+        text: Your request comes straight to me.
+      - title: Your valuation within 24 hours
+        text: I compare your home with recent sales of similar homes nearby and with what's currently for sale, then send you a personal valuation.
+      - title: Talk it through, if you'd like
+        text: We can go over it by phone, Zoom or in person. There's no obligation to list.
+
+  - id: questions
+    type: faq
+    heading: Common questions
+    items:
+      - q: How accurate is the valuation?
+        a: It's based on recent sales of comparable homes and on what's currently for sale. Every home is different, so if you'd like a closer number, I can view your home in person.
+      - q: Does a valuation commit me to listing?
+        a: No. The valuation is free and comes with no obligation to list.
+      - q: What happens to my information?
+        a: I use it to prepare your valuation and to contact you about it. See the [privacy policy](/privacy/) for details.
