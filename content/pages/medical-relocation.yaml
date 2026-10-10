@@ -1,0 +1,51 @@
+path: /medical-relocation/
+nav_label: Medical professional relocation
+title: Medical professional relocation to Grande Prairie | Todd Irvine, Real Broker
+description: Doctors, nurses and other healthcare professionals moving to the Grande Prairie region can plan their home search by video or phone call before they arrive. Todd Irvine, REALTOR® with Real Broker.
+
+heading: Relocating to Grande Prairie for a healthcare role
+intro: For doctors, nurses and other healthcare professionals moving to the Grande Prairie region, or leaving it when a contract ends. Plan your move from wherever you are now, then search in person once you land.
+actions:
+  - label: Book a video call
+    url: /book-a-call/
+  - label: Read the area guides
+    url: /areas/
+
+sections:
+  - id: plan
+    type: steps
+    heading: How it works
+    items:
+      - title: Before you arrive
+        text: |
+          - Video or phone calls in your time zone
+          - Video walkthroughs of homes
+          - Inspection coordination
+          - Area guides for every community you're considering
+          - A timeline worked back from your contract start date
+          - A referral to a lender
+      - title: Once you land
+        text: A focused, in-person home search, built on everything we narrowed down before you arrived.
+      - title: When your contract moves you
+        text: When it's time to leave, I sell your home, with weekly updates and strategy sessions by video if you've already moved.
+
+  - id: results
+    type: results
+    tone: stone
+    heading: Recent results for healthcare professionals
+    keys: [uk-doctors, bc-seller]
+
+  - id: questions
+    type: faq
+    heading: Common questions
+    items:
+      - q: Can I start before I arrive?
+        a: Yes. We can meet by video or phone in your time zone, set up listing alerts and walk through homes by video, so a lot of the narrowing down is done before you land.
+      - q: Which areas should I look at?
+        a: It depends on where you'll be working and how you want to live. Each area has its own guide, and I'll help you narrow it down on our first call.
+      - q: What if my contract starts soon?
+        a: Tell me your start date on our first call. I'll work the timeline back from it, so your search, financing and possession line up.
+
+closing:
+  heading: Tell me your start date, and we'll plan your move around it.
+  text: Book a video or phone call at a time that works in your time zone.

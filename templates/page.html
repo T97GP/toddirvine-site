@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import results_grid, preview_note %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        {% if page.parent is defined %}<li><a href="{{ page.parent.url }}">{{ page.parent.label }}</a></li>{% endif %}
+        <li aria-current="page">{{ page.nav_label }}</li>
+      </ol>
+    </nav>
+    <h1>{{ page.heading }}</h1>
+    <p class="page-hero__intro">{{ page.intro }}</p>
+    {% if page.actions is defined %}
+    <p class="hero__actions">
+      {% for action in page.actions %}
+      <a class="button button--large {{ 'button--primary' if loop.first else 'button--quiet' }}" href="{{ action.url }}">{{ action.label }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</section>
+
+{% for s in page.sections %}
+<section class="page-section{% if s.tone is defined %} page-section--{{ s.tone }}{% endif %}" aria-labelledby="{{ s.id }}">
+  <div class="wrap">
+    <h2 id="{{ s.id }}">{{ s.heading }}</h2>
+    {% if s.intro is defined %}<div class="page-section__intro">{{ s.intro | md }}</div>{% endif %}
+
+    {% if s.type == "text" %}
+      <div class="prose">{{ s.body | md }}</div>
+
+    {% elif s.type == "steps" %}
+      <ol class="steps">
+        {% for step in s['items'] %}
+        <li class="steps__item">
+          <h3>{{ step.title }}</h3>
+          <div class="prose">{{ step.text | md }}</div>
+        </li>
+        {% endfor %}
+      </ol>
+
+    {% elif s.type == "promises" %}
+      <div class="bracket bracket--left">
+        <ul class="checklist">
+          {% for item in s['items'] %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    {% elif s.type == "links" %}
+      <ul class="link-rows">
+        {% for link in s['items'] %}
+        <li>
+          <a href="{{ link.url }}">
+            <span class="link-rows__title">{{ link.title }}</span>
+            <span class="link-rows__text">{{ link.text }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+    {% elif s.type == "results" %}
+      {{ results_grid(results, s['keys']) }}
+
+    {% elif s.type == "faq" %}
+      <div class="faq">
+        {% for item in s['items'] %}
+        <details class="faq__item">
+          <summary>{{ item.q }}</summary>
+          <div class="prose">{{ item.a | md }}</div>
+        </details>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if s.note is defined %}{{ preview_note(site, s.note) }}{% endif %}
+  </div>
+</section>
+{% endfor %}
+
+{% include "partials/closing.html" %}
+
+{% set faqs = page.sections | selectattr("type", "equalto", "faq") | list %}
+{% if faqs %}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faq_entities(faqs)
+} | tojson }}
+</script>
+{% endif %}
+{% endblock %}

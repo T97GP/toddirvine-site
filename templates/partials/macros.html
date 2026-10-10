@@ -11,6 +11,20 @@
 </picture>
 {% endmacro %}
 
+{# Client results, looked up by key in content/results.yaml. #}
+{% macro results_grid(results, keys) %}
+<div class="results__grid">
+  {% for key in keys %}
+  {% set r = results[key] %}
+  <article class="result">
+    <p class="result__figure"><span class="result__number">{{ r.figure }}</span> <span class="result__label">{{ r.figure_label }}</span></p>
+    <p class="result__story">{{ r.story }}</p>
+    <p class="result__who">{{ r.who }}</p>
+  </article>
+  {% endfor %}
+</div>
+{% endmacro %}
+
 {# Notes that explain unfinished parts. They only show before launch. #}
 {% macro preview_note(site, text) %}
 {% if not site.live %}<p class="preview-note"><span class="preview-note__tag">Preview note</span> {{ text }}</p>{% endif %}

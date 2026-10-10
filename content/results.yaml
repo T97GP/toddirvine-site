@@ -1,0 +1,16 @@
+# Client results. One place for every result shown on the site, so the wording stays identical everywhere.
+# Only add a result once the client has given permission to feature it.
+
+uk-doctors:
+  figure: $22,000
+  figure_label: below the reduced list price
+  story: Two doctors relocating from the U.K. bought their home at $1,177,000, which I negotiated down from the reduced list price of $1,199,000.
+  who: Buyers relocating from the U.K.
+  permission: Cleared to advertise
+
+bc-seller:
+  figure: 5 days
+  figure_label: to an accepted offer
+  story: A healthcare professional relocating to B.C. accepted an offer within 5 days, close to the list price.
+  who: Seller relocating to B.C.
+  permission: Cleared to advertise

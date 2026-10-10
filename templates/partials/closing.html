@@ -1,0 +1,11 @@
+{% set closing = page.closing if page.closing is defined else site.closing %}
+<section class="closing" aria-labelledby="closing-heading">
+  <div class="wrap closing__inner">
+    <h2 id="closing-heading">{{ closing.heading }}</h2>
+    <p>{{ closing.text }}</p>
+    <p class="closing__actions">
+      <a class="button button--on-dark button--large" href="{{ site.book_call_url }}">Book a call</a>
+      <a class="closing__phone" href="tel:{{ site.agent.phone_tel }}">or call {{ site.agent.phone_display }}</a>
+    </p>
+  </div>
+</section>

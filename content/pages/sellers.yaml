@@ -1,0 +1,67 @@
+path: /sellers/
+nav_label: Sellers
+title: Selling your home in Grande Prairie | Todd Irvine, Real Broker
+description: Selling a home in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge? Get a free home valuation within 24 hours, marketing paid by Todd Irvine, and weekly updates.
+
+heading: Selling your home in Grande Prairie
+intro: Start with a free valuation of your home within 24 hours. From there, you get a price built on recent sales, marketing I pay for, and an update from me every week until it's sold.
+actions:
+  - label: Get my free valuation
+    url: /sellers/home-valuation/
+  - label: Book a call
+    url: /book-a-call/
+
+sections:
+  - id: who
+    type: text
+    heading: Who I help
+    body: Homeowners in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge, including people relocating away for work.
+
+  - id: what-you-get
+    type: promises
+    heading: What you get
+    items:
+      - A free home valuation within 24 hours
+      - Quick response times
+      - Marketing that works, backed by real results
+      - All marketing costs paid by me, so you can focus on packing
+      - An update from me every week
+      - Strategy sessions by Zoom, phone or in person
+
+  - id: plan
+    type: steps
+    tone: stone
+    heading: How selling works, step by step
+    items:
+      - title: A call
+        text: We talk about your home, your timeline and where you're headed next.
+      - title: Your valuation within 24 hours
+        text: A personal valuation of your home based on recent comparable sales. It's free, with no obligation to list.
+      - title: Set the price
+        text: We choose a list price together, using comparable sales and what's currently for sale.
+      - title: Prepare and market
+        text: We get your home ready to show, and I launch the marketing at my cost.
+      - title: Weekly updates
+        text: Every week I update you on activity and what I recommend next.
+      - title: Offers and negotiation
+        text: I review every offer with you and negotiate the price and terms.
+      - title: Possession day
+        text: Once the conditions are cleared, your lawyer completes the sale and you hand over the keys.
+
+  - id: result
+    type: results
+    heading: A recent sale
+    keys: [bc-seller]
+
+  - id: questions
+    type: faq
+    heading: Common questions
+    items:
+      - q: How is my list price set?
+        a: From recent sales of comparable homes nearby, adjusted for your home's size, condition and features, and for what's currently for sale.
+      - q: How often will I hear from you?
+        a: Every week, and any time there's news, like a showing request or an offer.
+      - q: Does a valuation commit me to listing?
+        a: No. The valuation is free and comes with no obligation to list.
+      - q: Who pays for the marketing?
+        a: I do. All marketing costs for your listing are paid by me.

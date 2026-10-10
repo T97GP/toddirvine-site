@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import picture, preview_note %}
+{% from "partials/macros.html" import picture, preview_note, results_grid %}
 
 {% block content %}
 <section class="hero">
@@ -86,15 +86,7 @@
 <section class="results" aria-labelledby="results-heading">
   <div class="wrap">
     <h2 id="results-heading">{{ page.results.heading }}</h2>
-    <div class="results__grid">
-      {% for r in page.results['items'] %}
-      <article class="result">
-        <p class="result__figure"><span class="result__number">{{ r.figure }}</span> <span class="result__label">{{ r.figure_label }}</span></p>
-        <p class="result__story">{{ r.story }}</p>
-        <p class="result__who">{{ r.who }}</p>
-      </article>
-      {% endfor %}
-    </div>
+    {{ results_grid(results, page.results['keys']) }}
   </div>
 </section>
 
@@ -145,14 +137,9 @@
   </div>
 </section>
 
-<section class="closing" aria-labelledby="closing-heading">
-  <div class="wrap closing__inner">
-    <h2 id="closing-heading">{{ page.closing.heading }}</h2>
-    <p>{{ page.closing.text }}</p>
-    <p class="closing__actions">
-      <a class="button button--on-dark button--large" href="{{ site.book_call_url }}">Book a call</a>
-      <a class="closing__phone" href="tel:{{ site.agent.phone_tel }}">or call {{ site.agent.phone_display }}</a>
-    </p>
-  </div>
-</section>
+{% include "partials/closing.html" %}
+
+<script type="application/ld+json">
+{{ agent_schema(site, page.areas['items'] | map(attribute='name') | list) | tojson }}
+</script>
 {% endblock %}

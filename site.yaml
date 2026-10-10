@@ -9,13 +9,17 @@ agent:
   name: Todd Irvine
   licensed_name: Todd Richard Irvine
   designation: REALTOR®
-  phone_display: (587) 343-7310
+  phone_display: 587-343-7310
   phone_tel: "+15873437310"
   email: tirvinerealestate@gmail.com
 
 brokerage:
   name: Real Broker
-  address: 300-9835 101 Ave, Grande Prairie, Alberta T8V 5V4
+  street: 300-9835 101 Ave
+  city: Grande Prairie
+  province: Alberta
+  province_code: AB
+  postal: T8V 5V4
   phone_display: 855-623-6900
   phone_tel: "+18556236900"
 
@@ -37,3 +41,8 @@ nav:
 
 book_call_url: /book-a-call/
 privacy_url: /privacy/
+
+# Closing call to action at the bottom of every page (a page can override it).
+closing:
+  heading: Tell me where you're headed, and we'll plan the next step together.
+  text: Book a call by Zoom, phone or in person.

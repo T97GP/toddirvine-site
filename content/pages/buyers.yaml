@@ -1,0 +1,73 @@
+path: /buyers/
+nav_label: Buyers
+title: Buying a home in Grande Prairie | Todd Irvine, Real Broker
+description: How buying a home works in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge, step by step. Start with a free consultation with Todd Irvine, REALTOR®.
+
+heading: Buying a home in Grande Prairie
+intro: Whether it's your first home, more room for a growing family or a move here for work, you get a clear plan from the first call to the day you get your keys. It starts with a free consultation.
+actions:
+  - label: Book a free consultation
+    url: /book-a-call/
+  - label: Search homes
+    url: /search/
+
+sections:
+  - id: who
+    type: text
+    heading: Who I help
+    body: |
+      - First-time buyers
+      - Families who need more space
+      - Move-up buyers
+      - People relocating to Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge
+
+  - id: plan
+    type: steps
+    tone: stone
+    heading: How buying works, step by step
+    intro: Every purchase is a little different, but most follow this order.
+    items:
+      - title: A free consultation
+        text: We talk through what you're looking for, your budget, your timeline and the areas that fit. By Zoom, phone or in person.
+      - title: Get pre-approved
+        text: I'll refer you to a lender, so you know your price range before you start viewing homes.
+      - title: Set up your search
+        text: I set up listing alerts for the areas and price range you want, so new listings come to you by email.
+      - title: View homes
+        text: We tour the homes that fit, in person or by video walkthrough if you can't be there.
+      - title: Make an offer
+        text: I price your offer from recent comparable sales and negotiate on your behalf.
+      - title: Clear your conditions
+        text: Your offer can include conditions, such as financing and a home inspection, that you clear before the deal is firm.
+      - title: Deposit and lawyer
+        text: You provide your deposit as set out in your contract, and your real estate lawyer handles the legal side of the purchase.
+      - title: Possession day
+        text: Your lawyer completes the purchase and you get your keys.
+
+  - id: guides
+    type: links
+    heading: Guides for your situation
+    items:
+      - title: First-time buyers
+        text: Where to start, and what to expect at each step.
+        url: /buyers/first-time-buyers/
+      - title: Larger family homes
+        text: Finding more space, with a sell-then-buy plan if you need to sell first.
+        url: /buyers/larger-family-homes/
+    note: Both guides are written next and launch with the site.
+
+  - id: result
+    type: results
+    heading: A recent purchase
+    keys: [uk-doctors]
+
+  - id: questions
+    type: faq
+    heading: Common questions
+    items:
+      - q: When should I get pre-approved?
+        a: Before you start viewing homes. A pre-approval tells you your price range and lets you move quickly when the right home comes up. I can refer you to a lender.
+      - q: Can I plan a purchase before I move to Grande Prairie?
+        a: Yes. We can meet by video or phone call in your time zone, I can set up listing alerts and walk you through homes by video, and you can view in person once you arrive.
+      - q: What does the free consultation cover?
+        a: We go over what you're looking for, your budget, your timeline and the areas that fit, and you leave with a clear next step. There's no cost and no obligation.

@@ -57,15 +57,7 @@ areas:
 
 results:
   heading: Recent results
-  items:
-    - figure: $22,000
-      figure_label: below the reduced list price
-      story: Two doctors relocating from the U.K. bought their home at $1,177,000, which I negotiated down from the reduced list price of $1,199,000.
-      who: Buyers relocating from the U.K.
-    - figure: 5 days
-      figure_label: to an accepted offer
-      story: A healthcare professional relocating to B.C. accepted an offer within 5 days, close to the list price.
-      who: Seller relocating to B.C.
+  keys: [uk-doctors, bc-seller]   # from content/results.yaml
 
 listings:
   heading: New listings in your areas
@@ -84,6 +76,3 @@ market:
   note: The first monthly market update publishes at launch.
   url: /areas/market-updates/
 
-closing:
-  heading: Tell me where you're headed, and we'll plan the next step together.
-  text: Book a call by Zoom, phone or in person.

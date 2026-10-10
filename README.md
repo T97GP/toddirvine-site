@@ -10,7 +10,9 @@ Plain HTML loads fast and can be read by search engines and AI tools without run
 | Folder or file | What's in it |
 | --- | --- |
 | `site.yaml` | Contact details, menu, accent colour, and the `live` switch |
-| `content/` | Page words (YAML and Markdown) |
+| `content/home.yaml` | Homepage words |
+| `content/pages/` | One YAML file per page (Buyers, Sellers, and so on). Text fields accept Markdown. |
+| `content/results.yaml` | Client results, shared by every page that shows them |
 | `templates/` | Page layouts (Jinja2) |
 | `static/` | CSS, the Lora heading font, logos and photos |
 | `dist/` | The built site (created by the build, not stored in Git) |
