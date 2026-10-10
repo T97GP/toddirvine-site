@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="site-header__top wrap">
+    <div class="brokerage">
+      <img src="/img/real-broker-logo-charcoal.png" alt="Real Broker logo" width="120" height="58">
+      <span class="brokerage__name">{{ site.brokerage.name }}</span>
+    </div>
+
+    <a class="brand" href="/">
+      <img src="/img/t-irvine-logo-charcoal.png" alt="T Irvine Real Estate, home" width="260" height="138">
+    </a>
+
+    <div class="header-actions">
+      <a class="header-actions__phone" href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a>
+      <a class="button button--primary" href="{{ site.book_call_url }}">Book a call</a>
+    </div>
+
+    <details class="menu-mobile">
+      <summary>Menu</summary>
+      <nav aria-label="Main">
+        <ul>
+          {% for item in site.nav %}
+          <li><a href="{{ item.url }}"{% if current_path == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </details>
+  </div>
+
+  <nav class="menu-desktop" aria-label="Main">
+    <ul class="wrap">
+      {% for item in site.nav %}
+      <li><a href="{{ item.url }}"{% if current_path == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

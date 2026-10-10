@@ -1,0 +1,17 @@
+{# Responsive photo: expects static/img/<name>-480|800|1200.webp and .jpg at a 4:5 ratio. #}
+{% macro picture(name, alt, sizes, eager=false) %}
+<picture>
+  <source type="image/webp"
+          srcset="/img/{{ name }}-480.webp 480w, /img/{{ name }}-800.webp 800w, /img/{{ name }}-1200.webp 1200w"
+          sizes="{{ sizes }}">
+  <img src="/img/{{ name }}-800.jpg"
+       srcset="/img/{{ name }}-480.jpg 480w, /img/{{ name }}-800.jpg 800w, /img/{{ name }}-1200.jpg 1200w"
+       sizes="{{ sizes }}" alt="{{ alt }}" width="800" height="1000"
+       {% if eager %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+</picture>
+{% endmacro %}
+
+{# Notes that explain unfinished parts. They only show before launch. #}
+{% macro preview_note(site, text) %}
+{% if not site.live %}<p class="preview-note"><span class="preview-note__tag">Preview note</span> {{ text }}</p>{% endif %}
+{% endmacro %}

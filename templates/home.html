@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% from "partials/macros.html" import picture, preview_note %}
+
+{% block content %}
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <h1>{{ page.hero.headline }}</h1>
+      <p class="hero__supporting">{{ page.hero.supporting }}</p>
+      <p class="hero__actions">
+        <a class="button button--primary button--large" href="{{ site.book_call_url }}">Book a call</a>
+        <a class="button button--quiet button--large" href="/search/">Search homes</a>
+      </p>
+    </div>
+    <figure class="hero__photo">
+      {{ picture(page.hero.photo, page.hero.photo_alt, "(min-width: 900px) 40vw, 90vw", eager=true) }}
+      {% if not site.live %}<figcaption>{{ preview_note(site, page.hero.preview_note) }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="paths" aria-label="Where to start">
+  <div class="wrap paths__grid">
+    {% for path in page.paths %}
+    <div class="paths__item">
+      <h2>{{ path.heading }}</h2>
+      <p>{{ path.text }}</p>
+      <a class="text-link" href="{{ path.url }}">{{ path.link_text }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="search-band" aria-labelledby="search-heading">
+  <div class="wrap">
+    <h2 id="search-heading">{{ page.search.heading }}</h2>
+    <form class="quick-search" action="/search/" method="get">
+      <label>Area
+        <select name="area">
+          <option value="">Any area</option>
+          {% for area in page.areas['items'] %}
+          <option>{{ area.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Maximum price
+        <select name="max_price">
+          <option value="">Any price</option>
+          <option value="300000">$300,000</option>
+          <option value="400000">$400,000</option>
+          <option value="500000">$500,000</option>
+          <option value="600000">$600,000</option>
+          <option value="800000">$800,000</option>
+          <option value="1000000">$1,000,000</option>
+        </select>
+      </label>
+      <label>Bedrooms
+        <select name="beds">
+          <option value="">Any</option>
+          <option value="1">1 or more</option>
+          <option value="2">2 or more</option>
+          <option value="3">3 or more</option>
+          <option value="4">4 or more</option>
+          <option value="5">5 or more</option>
+        </select>
+      </label>
+      <button class="button button--primary" type="submit">Search homes</button>
+    </form>
+    {{ preview_note(site, page.search.note) }}
+  </div>
+</section>
+
+<section class="promises" aria-labelledby="promises-heading">
+  <div class="wrap">
+    <div class="bracket">
+      <h2 id="promises-heading">{{ page.promises.heading }}</h2>
+      <ul class="promises__list">
+        {% for item in page.promises['items'] %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="results" aria-labelledby="results-heading">
+  <div class="wrap">
+    <h2 id="results-heading">{{ page.results.heading }}</h2>
+    <div class="results__grid">
+      {% for r in page.results['items'] %}
+      <article class="result">
+        <p class="result__figure"><span class="result__number">{{ r.figure }}</span> <span class="result__label">{{ r.figure_label }}</span></p>
+        <p class="result__story">{{ r.story }}</p>
+        <p class="result__who">{{ r.who }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="areas" aria-labelledby="areas-heading">
+  <div class="wrap areas__grid">
+    <div class="areas__intro">
+      <h2 id="areas-heading">{{ page.areas.heading }}</h2>
+      <p>{{ page.areas.intro }}</p>
+      <a class="text-link" href="{{ page.areas.url }}">{{ page.areas.link_text }}</a>
+    </div>
+    <ul class="areas__list">
+      {% for area in page.areas['items'] %}
+      <li>
+        <a href="{{ area.url }}">
+          <span class="areas__name">{{ area.name }}</span>
+          {% if area.detail is defined %}<span class="areas__detail">{{ area.detail }}</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="listings" aria-labelledby="listings-heading">
+  <div class="wrap">
+    <h2 id="listings-heading">{{ page.listings.heading }}</h2>
+    {{ preview_note(site, page.listings.note) }}
+  </div>
+</section>
+
+<section class="meet" aria-labelledby="meet-heading">
+  <div class="wrap meet__grid">
+    <figure class="meet__photo">
+      {{ picture(page.about.photo, page.about.photo_alt, "(min-width: 900px) 30vw, 80vw") }}
+    </figure>
+    <div class="meet__text">
+      <h2 id="meet-heading">{{ page.about.heading }}</h2>
+      <p>{{ page.about.text }}</p>
+      <a class="text-link" href="{{ page.about.url }}">{{ page.about.link_text }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="market" aria-labelledby="market-heading">
+  <div class="wrap">
+    <h2 id="market-heading">{{ page.market.heading }}</h2>
+    {{ preview_note(site, page.market.note) }}
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-heading">
+  <div class="wrap closing__inner">
+    <h2 id="closing-heading">{{ page.closing.heading }}</h2>
+    <p>{{ page.closing.text }}</p>
+    <p class="closing__actions">
+      <a class="button button--on-dark button--large" href="{{ site.book_call_url }}">Book a call</a>
+      <a class="closing__phone" href="tel:{{ site.agent.phone_tel }}">or call {{ site.agent.phone_display }}</a>
+    </p>
+  </div>
+</section>
+{% endblock %}

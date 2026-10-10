@@ -1,0 +1,32 @@
+{% from "partials/macros.html" import preview_note %}
+<!doctype html>
+<html lang="en-CA" data-accent="{{ accent }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ site.base_url }}{{ current_path }}">
+  {% if not site.live %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:url" content="{{ site.base_url }}{{ current_path }}">
+  <link rel="preload" href="/fonts/lora-variable.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  {% include "partials/header.html" %}
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.html" %}
+  <div class="action-bar" aria-label="Quick contact">
+    <a class="action-bar__call" href="tel:{{ site.agent.phone_tel }}">Call {{ site.agent.name.split(' ')[0] }}</a>
+    <a class="action-bar__book" href="{{ site.book_call_url }}">Book a call</a>
+  </div>
+</body>
+</html>

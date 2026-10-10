@@ -1,0 +1,90 @@
+# Homepage content. Edit the words here; the layout stays the same.
+
+title: Grande Prairie realtor | Todd Irvine, Real Broker
+description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge? Todd Irvine replies within the hour. Free buyer consultations and free home valuations within 24 hours.
+
+hero:
+  headline: Buying or selling in Grande Prairie? Let's build the right strategy to accomplish your real estate goals today.
+  supporting: Replies within the hour. No pressure. Serving Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+  photo: todd-portrait-standing
+  photo_alt: Todd Irvine, REALTOR® with Real Broker in Grande Prairie
+  preview_note: A local Grande Prairie photo from the photographer replaces this portrait.
+
+paths:
+  - heading: Buyers
+    text: How buying works here, from pre-approval to possession, with a free consultation to start.
+    link_text: See the buyer plan
+    url: /buyers/
+  - heading: Sellers
+    text: A free valuation within 24 hours, marketing paid by me, and an update from me every week.
+    link_text: See the seller plan
+    url: /sellers/
+  - heading: Relocating for work
+    text: Moving here for a healthcare or other job? Plan your purchase by video call before you arrive.
+    link_text: Plan a move
+    url: /relocating/
+
+search:
+  heading: Search homes for sale
+  note: The search connects to Pillar 9 listings before launch.
+
+promises:
+  heading: What you can count on
+  items:
+    - Replies within the hour
+    - Free buyer consultations
+    - Free home valuations within 24 hours
+    - Weekly updates for sellers
+    - Seller marketing paid by me
+
+areas:
+  heading: Where I work
+  intro: Every area gets its own guide, with schools, parks, shopping and live listings.
+  items:
+    - name: Grande Prairie
+      detail: Neighbourhood by neighbourhood
+      url: /areas/grande-prairie/
+    - name: Grande Prairie County
+      detail: Area by area
+      url: /areas/grande-prairie-county/
+    - name: Clairmont
+      url: /areas/clairmont/
+    - name: Sexsmith
+      url: /areas/sexsmith/
+    - name: Beaverlodge
+      url: /areas/beaverlodge/
+  link_text: Explore all areas
+  url: /areas/
+
+results:
+  heading: Recent results
+  items:
+    - figure: $22,000
+      figure_label: below the reduced list price
+      story: Two doctors relocating from the U.K. bought their home at $1,177,000, which I negotiated down from the reduced list price of $1,199,000.
+      who: Buyers relocating from the U.K.
+    - figure: 5 days
+      figure_label: to an accepted offer
+      story: A healthcare professional relocating to B.C. accepted an offer within 5 days, close to the list price.
+      who: Seller relocating to B.C.
+
+listings:
+  heading: New listings in your areas
+  note: New Pillar 9 listings show here once the listings feed is connected.
+
+about:
+  heading: I'm Todd Irvine.
+  text: Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers and a plan built around your timeline. I'm a REALTOR® with Real Broker, based in Grande Prairie.
+  photo: todd-portrait-seated
+  photo_alt: Todd Irvine seated, smiling
+  link_text: How I work
+  url: /about/
+
+market:
+  heading: Market updates
+  note: The first monthly market update publishes at launch.
+  url: /areas/market-updates/
+
+closing:
+  heading: Tell me where you're headed, and we'll plan the next step together.
+  text: Book a call by Zoom, phone or in person.
