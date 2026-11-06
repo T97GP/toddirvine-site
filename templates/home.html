@@ -86,22 +86,6 @@
         </p>
       </div>
     </div>
-    <div class="home-about__more">
-      <ul class="home-checks">
-        {% for item in page.about.promises %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-      <div class="home-results">
-        {% for key in page.about.results_keys %}
-        {% set r = results[key] %}
-        <div class="home-result">
-          <p class="home-result__figure">{{ r.figure }} <span>{{ r.figure_label }}</span></p>
-          <p>{{ r.story }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
   </div>
 </section>
 
