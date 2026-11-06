@@ -12,11 +12,6 @@ actions:
     url: /book-a-call/
 
 sections:
-  - id: who
-    type: text
-    heading: Who I help
-    body: Homeowners in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge, including people relocating away for work.
-
   - id: what-you-get
     type: promises
     heading: What you get
