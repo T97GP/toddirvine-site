@@ -15,20 +15,8 @@ sections:
   - id: valuation
     type: form
     form: valuation
-    tone: stone
     heading: Get your free home valuation
     intro: Tell me about your home and I'll send you a personal valuation within 24 hours.
-
-  - id: what-you-get
-    type: promises
-    heading: What you get
-    items:
-      - A free home valuation within 24 hours
-      - Quick response times
-      - Marketing that works, backed by real results
-      - All marketing costs paid by me, so you can focus on packing
-      - An update from me every week
-      - Strategy sessions by Zoom, phone or in person
 
   - id: plan
     type: steps
