@@ -22,7 +22,6 @@ sections:
     heading: What I collect
     body: |
       - **What you enter in a form on this site:** your name, email, phone number, property address, timeline, message, and whether you'd like email updates.
-      - **What you enter when you book a call** through my Google Calendar booking page.
       - **What you send me** by email, phone or text.
       - **Technical information.** Cloudflare, which hosts this website, processes technical details such as IP addresses to deliver pages and protect the site from abuse. This site doesn't use advertising or tracking cookies.
 
@@ -45,7 +44,7 @@ sections:
       - With **Real Broker**, the brokerage I'm licensed with, when needed to provide real estate services to you.
       - With **service providers** that store or process it for me:
           - Lofty, my client management system, which keeps your contact details and our history together;
-          - Google, for email and booking calls;
+          - Google, for email;
           - Cloudflare, which hosts this website and passes form submissions on to me;
           - Resend, which delivers form submissions to my email inbox.
       - With others, such as a lender, lawyer, home inspector or another agent, **only with your permission** or as part of a transaction you've asked me to help with.
