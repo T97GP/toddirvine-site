@@ -14,6 +14,7 @@
       </nav>
       <h1>{{ page.heading }}</h1>
       {% if page.intro is defined and page.intro %}<p class="page-hero__intro">{{ page.intro }}</p>{% endif %}
+      {% if page.bio is defined %}<div class="page-hero__bio">{% for para in page.bio %}<p>{{ para }}</p>{% endfor %}</div>{% endif %}
       {% if page.dateline is defined %}<p class="page-hero__dateline">{{ page.dateline }}</p>{% endif %}
       {% if page.actions is defined %}
       <p class="hero__actions">

@@ -488,6 +488,8 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 }
 .page-hero h1 { max-width: 24ch; }
 .page-hero__intro { font-size: 1.25rem; color: var(--muted); max-width: 56ch; }
+.page-hero__bio p { font-size: 1.05rem; line-height: 1.7; color: var(--ink); max-width: 62ch; }
+.page-hero__grid:has(.page-hero__bio) { align-items: start; }
 
 .breadcrumb ol {
   display: flex;
