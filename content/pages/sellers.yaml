@@ -8,8 +8,8 @@ intro: Start with a free valuation of your home within 24 hours. From there, you
 actions:
   - label: Get my free valuation
     url: /sellers/home-valuation/
-  - label: Book a call
-    url: /book-a-call/
+  - label: Call Now
+    url: tel:+15873437310
 
 sections:
   - id: what-you-get

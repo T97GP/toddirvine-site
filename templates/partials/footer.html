@@ -11,7 +11,7 @@
       <p><strong>{{ site.agent.licensed_name }}</strong>, {{ site.agent.designation }}<br>
         <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a><br>
         <a href="mailto:{{ site.agent.email }}">{{ site.agent.email }}</a></p>
-      <p><a class="button button--primary" href="{{ site.book_call_url }}">Book a call</a></p>
+      <p><a class="button button--primary" href="tel:{{ site.agent.phone_tel }}">{{ site.call_now_label }}</a></p>
     </div>
 
     <nav class="site-footer__nav" aria-label="Footer">

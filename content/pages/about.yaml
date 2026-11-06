@@ -8,9 +8,7 @@ intro: I'm a REALTOR® with Real Broker in Grande Prairie, working with buyers a
 photo: todd-portrait-seated
 photo_alt: Todd Irvine, REALTOR® with Real Broker, seated and smiling
 actions:
-  - label: Book a call
-    url: /book-a-call/
-  - label: Call or text 587-343-7310
+  - label: Call Now
     url: tel:+15873437310
 
 sections:

@@ -41,7 +41,10 @@ nav:
       - label: Areas
         url: /areas/
 
-book_call_url: /book-a-call/
+book_call_url: /book-a-call/   # the contact page (message form, phone, email)
+
+# Main button on every page: dials Todd's phone.
+call_now_label: Call Now
 privacy_url: /privacy/
 
 # Google Calendar booking page (Calendar > your appointment schedule > Share).

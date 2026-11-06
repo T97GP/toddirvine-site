@@ -83,7 +83,7 @@
         <p>{{ para }}</p>
         {% endfor %}
         <p class="home-about__actions">
-          <a class="home-btn" href="{{ site.book_call_url }}">Book a call</a>
+          <a class="home-btn" href="tel:{{ site.agent.phone_tel }}">{{ site.call_now_label }}</a>
           <a class="home-more" href="{{ page.about.url }}">{{ page.about.link_text }} <span aria-hidden="true">›</span></a>
         </p>
       </div>
@@ -130,7 +130,7 @@
       <h2 id="contact-heading">{{ page.contact.heading }}</h2>
       <p>{{ page.contact.text }}</p>
     </div>
-    <a class="home-btn" href="{{ site.book_call_url }}">{{ page.contact.button }} <span aria-hidden="true">›</span></a>
+    <a class="home-btn" href="tel:{{ site.agent.phone_tel }}">{{ site.call_now_label }} <span aria-hidden="true">›</span></a>
   </div>
 </section>
 

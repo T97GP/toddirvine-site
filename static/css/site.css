@@ -1099,7 +1099,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
     bottom: 0;
     z-index: 50;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     border-top: 1px solid var(--rule);
     background: var(--paper);
   }

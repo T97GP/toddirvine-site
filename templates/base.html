@@ -26,8 +26,7 @@
   </main>
   {% include "partials/footer.html" %}
   <div class="action-bar" aria-label="Quick contact">
-    <a class="action-bar__call" href="tel:{{ site.agent.phone_tel }}">Call {{ site.agent.name.split(' ')[0] }}</a>
-    <a class="action-bar__book" href="{{ site.book_call_url }}">Book a call</a>
+    <a class="action-bar__book" href="tel:{{ site.agent.phone_tel }}">{{ site.call_now_label }}</a>
   </div>
 </body>
 </html>
