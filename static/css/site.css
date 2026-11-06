@@ -855,7 +855,18 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 .person-card__name { font-size: 1.35rem; font-weight: 600; }
 .person-card__caption a { color: var(--white); text-decoration: none; }
 .person-card__caption a:hover { text-decoration: underline; }
-.home-about__lead { font-size: 1.1rem; }
+.home-about__text p { font-size: 1.02rem; line-height: 1.7; }
+.home-about__more {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: clamp(1.75rem, 3vw, 2.5rem);
+  border-top: 1px solid var(--field);
+}
+.home-about__more .home-checks { grid-template-columns: 1fr; margin: 0; }
+.home-about__more .home-results { margin: 0; }
 .home-checks {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -992,7 +1003,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   .page-hero__photo { justify-self: start; max-width: 18rem; order: -1; }
 
   .home-hero__boxes { grid-template-columns: minmax(0, 1fr); }
-  .home-about { grid-template-columns: 1fr; }
+  .home-about, .home-about__more { grid-template-columns: 1fr; }
   .person-card { max-width: 22rem; }
   .listing-grid, .review-grid { grid-template-columns: 1fr; }
   .listing-grid .listing-card:nth-child(n+2),

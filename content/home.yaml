@@ -38,7 +38,14 @@ about:
   photo: todd-portrait-standing
   photo_alt: Todd Irvine, REALTOR® with Real Broker in Grande Prairie
   role: REALTOR® with Real Broker
-  text: Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers and a plan built around your timeline. I'm a REALTOR® with Real Broker, based in Grande Prairie.
+  # Todd's bio, from his agent page on troyirvine.com (Nov 6, 2026).
+  # One change: the dash in the last paragraph is now a full stop.
+  bio:
+    - "Todd Irvine brings over a decade of sales and negotiation experience along with a work ethic built from the ground up. He began his career in the automotive industry at the age of 14, starting in the wash bay and eventually working his way into upper management. Those years helped him develop strong skills in customer service, negotiation, and guiding people through important financial decisions."
+    - "With real estate being a family business, it was always part of Todd’s long-term plan to enter the industry. After building a strong foundation in sales and management, transitioning into real estate became a natural next step. Todd now brings that same work ethic, dedication, and negotiation experience to helping clients buy and sell homes with confidence."
+    - "Todd is known for going above and beyond for every client. His focus is not just completing transactions, but building long-term relationships and ensuring his clients feel confident and supported every step of the way. Whether helping someone find the right home at the best possible price or helping a homeowner sell for the value their property deserves, Todd approaches every deal with professionalism, determination, and attention to detail."
+    - "Grande Prairie has been home to Todd since middle school, and he is passionate about the community and proud to help both new families move to Grande Prairie and long-time residents transition into their next chapter."
+    - "Todd believes buying or selling a home is never just a transaction. It’s a major life decision. That’s why he takes the time his clients deserve, never rushes the process, and never takes shortcuts. His goal is simple: guide every client step by step and deliver the results they deserve."
   promises:
     - Free buyer consultations
     - Free home valuations within 24 hours

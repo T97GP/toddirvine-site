@@ -76,25 +76,29 @@
         </figcaption>
       </figure>
       <div class="home-about__text">
-        <p class="home-about__lead">{{ page.about.text }}</p>
-        <ul class="home-checks">
-          {% for item in page.about.promises %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        <div class="home-results">
-          {% for key in page.about.results_keys %}
-          {% set r = results[key] %}
-          <div class="home-result">
-            <p class="home-result__figure">{{ r.figure }} <span>{{ r.figure_label }}</span></p>
-            <p>{{ r.story }}</p>
-          </div>
-          {% endfor %}
-        </div>
+        {% for para in page.about.bio %}
+        <p>{{ para }}</p>
+        {% endfor %}
         <p class="home-about__actions">
           <a class="home-btn" href="{{ site.book_call_url }}">Book a call</a>
           <a class="home-more" href="{{ page.about.url }}">{{ page.about.link_text }} <span aria-hidden="true">›</span></a>
         </p>
+      </div>
+    </div>
+    <div class="home-about__more">
+      <ul class="home-checks">
+        {% for item in page.about.promises %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      <div class="home-results">
+        {% for key in page.about.results_keys %}
+        {% set r = results[key] %}
+        <div class="home-result">
+          <p class="home-result__figure">{{ r.figure }} <span>{{ r.figure_label }}</span></p>
+          <p>{{ r.story }}</p>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
