@@ -7,7 +7,9 @@ accent: blue           # chosen October 10, 2026 (green or blue)
 
 agent:
   name: Todd Irvine
-  licensed_name: Todd Richard Irvine
+  # Name shown on the site. RECA: a short form of the licensed name (Todd Richard Irvine)
+  # needs written notice to RECA first. https://reca.ca/?p=9873
+  licensed_name: Todd Irvine
   designation: REALTOR®
   phone_display: 587-343-7310
   phone_tel: "+15873437310"
