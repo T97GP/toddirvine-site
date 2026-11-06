@@ -9,12 +9,6 @@ intro: It may have moved, or it isn't built yet. Try the menu above, or reach me
 
 sections:
   - id: missing
-    type: text
-    heading: Looking for something specific?
-    body: |
-      Start from the [homepage](/), see how [buying](/buyers/) or [selling](/sellers/) works, or [call me](tel:+15873437310) and I'll help you find it.
-    note: Area guides, the listings search and market updates are still being built, so those links land here for now.
-
-  - id: reach
     type: contact
-    heading: Reach me directly
+    heading: Looking for something specific?
+    note: Area guides, the listings search and market updates are still being built, so those links land here for now.
