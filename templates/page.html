@@ -40,6 +40,23 @@
     {% if s.type == "text" %}
       <div class="prose">{{ s.body | md }}</div>
 
+    {% elif s.type == "steps" and s.groups is defined %}
+      {# Steps in named groups, numbered straight through (1, 2, 3 ... across every group) #}
+      {% set count = namespace(n=0) %}
+      {% for group in s.groups %}
+      <h3 class="steps-group">{{ group.heading }}</h3>
+      <ol class="steps" start="{{ count.n + 1 }}" style="counter-reset: step {{ count.n }}">
+        {% for step in group['items'] %}
+        <li class="steps__item">
+          <h4>{{ step.title }}</h4>
+          <div class="prose">{{ step.text | md }}</div>
+        </li>
+        {% endfor %}
+      </ol>
+      {% set count.n = count.n + group['items'] | length %}
+      {% endfor %}
+      {% if s.outro is defined %}<p class="steps-outro">{{ s.outro }}</p>{% endif %}
+
     {% elif s.type == "steps" %}
       <ol class="steps">
         {% for step in s['items'] %}
