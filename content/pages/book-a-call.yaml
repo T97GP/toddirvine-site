@@ -10,7 +10,7 @@ sections:
   - id: message
     type: form
     form: contact
-    heading: Prefer to send a message?
+    heading: Send me a message
     intro: Send me a note and I'll get back to you personally.
 
   - id: reach

@@ -134,6 +134,17 @@
   </div>
 </section>
 
+{# 7b. Send a message: online leads go to Lofty #}
+<section class="home-section home-section--stone" aria-labelledby="message-heading" id="send-a-message">
+  <div class="wrap home-message">
+    <div class="home-message__intro">
+      <h2 id="message-heading">{{ page.message.heading }}</h2>
+      <p>{{ page.message.text }}</p>
+    </div>
+    {% include "partials/forms/contact.html" %}
+  </div>
+</section>
+
 {# 8. Search bar #}
 <section class="home-section home-section--tight" aria-labelledby="search-heading">
   <div class="wrap">

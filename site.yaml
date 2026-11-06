@@ -40,6 +40,8 @@ nav:
         url: /about/
       - label: Areas
         url: /areas/
+      - label: Contact
+        url: /book-a-call/
 
 book_call_url: /book-a-call/   # the contact page (message form, phone, email)
 

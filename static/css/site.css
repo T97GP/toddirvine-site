@@ -451,6 +451,8 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 .closing p { color: #d9dcdf; }
 .closing__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.5rem; }
 .closing__phone { color: var(--paper); font-weight: 600; }
+.closing__link { color: var(--paper); font-weight: 600; }
+.closing__link:hover { color: var(--white); }
 .closing__phone:hover { color: var(--white); }
 .closing :focus-visible { outline-color: var(--paper); }
 
@@ -966,6 +968,22 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 .review-card__quote { font-family: Georgia, serif; font-size: 3.5rem; line-height: 0.8; color: #cfd6de; }
 .review-card__stars { color: #e8a33d; letter-spacing: 0.15em; margin-top: 0.4rem; }
 
+/* Send a message */
+.home-message {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+.home-message__intro h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.3rem, 1.05rem + 0.9vw, 1.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home-message__intro p { color: var(--muted); }
+.home .lead-form .button { font-family: "Montserrat", var(--sans); text-transform: uppercase; letter-spacing: 0.03em; }
+
 /* Search bar */
 .home-search {
   display: grid;
@@ -1066,7 +1084,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   .page-hero__photo { justify-self: start; max-width: 18rem; order: -1; }
 
   .home-hero__boxes { grid-template-columns: minmax(0, 1fr); }
-  .home-about, .home-about__more { grid-template-columns: 1fr; }
+  .home-about, .home-about__more, .home-message { grid-template-columns: 1fr; }
   .person-card { max-width: 22rem; }
   .listing-grid, .review-grid { grid-template-columns: 1fr; }
   .listing-grid .listing-card:nth-child(n+2),
@@ -1099,7 +1117,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
     bottom: 0;
     z-index: 50;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     border-top: 1px solid var(--rule);
     background: var(--paper);
   }

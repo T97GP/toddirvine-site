@@ -65,6 +65,10 @@ contact:
   heading: Get in touch with Todd
   text: Call now, or meet by Zoom or in person.
 
+message:
+  heading: Send me a message
+  text: Tell me what you're looking for and I'll get back to you personally.
+
 search:
   heading: Search homes for sale
   placeholder: City, community or neighbourhood
