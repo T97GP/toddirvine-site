@@ -26,9 +26,9 @@ brokerage:
 nav:
   - label: Search homes
     url: /search/
-  - label: Buyers
+  - label: Buy
     url: /buyers/
-  - label: Sellers
+  - label: Sell
     url: /sellers/
   - label: Medical professional relocation
     url: /medical-relocation/
