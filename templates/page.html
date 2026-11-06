@@ -13,7 +13,7 @@
         </ol>
       </nav>
       <h1>{{ page.heading }}</h1>
-      <p class="page-hero__intro">{{ page.intro }}</p>
+      {% if page.intro is defined and page.intro %}<p class="page-hero__intro">{{ page.intro }}</p>{% endif %}
       {% if page.dateline is defined %}<p class="page-hero__dateline">{{ page.dateline }}</p>{% endif %}
       {% if page.actions is defined %}
       <p class="hero__actions">
