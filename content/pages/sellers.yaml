@@ -42,16 +42,3 @@ sections:
         text: I review every offer with you and negotiate the price and terms.
       - title: Possession day
         text: Once the conditions are cleared, your lawyer completes the sale and you hand over the keys.
-
-  - id: questions
-    type: faq
-    heading: Common questions
-    items:
-      - q: How is my list price set?
-        a: From recent sales of comparable homes nearby, adjusted for your home's size, condition and features, and for what's currently for sale.
-      - q: How often will I hear from you?
-        a: Every week, and any time there's news, like a showing request or an offer.
-      - q: Does a valuation commit me to listing?
-        a: No. The valuation is free and comes with no obligation to list.
-      - q: Who pays for the marketing?
-        a: I do. All marketing costs for your listing are paid by me.

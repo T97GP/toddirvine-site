@@ -28,14 +28,3 @@ sections:
         text: A focused, in-person home search, built on everything we narrowed down before you arrived.
       - title: When your contract moves you
         text: When it's time to leave, I sell your home, with weekly updates and strategy sessions by video if you've already moved.
-
-  - id: questions
-    type: faq
-    heading: Common questions
-    items:
-      - q: Can I start before I arrive?
-        a: Yes. We can meet by video or phone in your time zone, set up listing alerts and walk through homes by video, so a lot of the narrowing down is done before you land.
-      - q: Which areas should I look at?
-        a: It depends on where you'll be working and how you want to live. Each area has its own guide, and I'll help you narrow it down on our first call.
-      - q: What if my contract starts soon?
-        a: Tell me your start date on our first call. I'll work the timeline back from it, so your search, financing and possession line up.
