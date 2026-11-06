@@ -51,7 +51,6 @@ booking:
   embed_src: ""
   page_url: ""
 
-# Closing call to action at the bottom of every page (a page can override it).
+# Closing call to action at the bottom of every page: one line and a Book a call button.
 closing:
-  heading: Tell me where you're headed, and we'll plan the next step together.
   text: Book a call by Zoom, phone or in person.
