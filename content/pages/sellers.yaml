@@ -48,11 +48,6 @@ sections:
       - title: Possession day
         text: Once the conditions are cleared, your lawyer completes the sale and you hand over the keys.
 
-  - id: result
-    type: results
-    heading: A recent sale
-    keys: [bc-seller]
-
   - id: questions
     type: faq
     heading: Common questions

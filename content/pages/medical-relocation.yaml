@@ -29,12 +29,6 @@ sections:
       - title: When your contract moves you
         text: When it's time to leave, I sell your home, with weekly updates and strategy sessions by video if you've already moved.
 
-  - id: results
-    type: results
-    tone: stone
-    heading: Recent results for healthcare professionals
-    keys: [uk-doctors, bc-seller]
-
   - id: questions
     type: faq
     heading: Common questions

@@ -56,11 +56,6 @@ sections:
         url: /buyers/larger-family-homes/
     note: Both guides are written next and launch with the site.
 
-  - id: result
-    type: results
-    heading: A recent purchase
-    keys: [uk-doctors]
-
   - id: questions
     type: faq
     heading: Common questions

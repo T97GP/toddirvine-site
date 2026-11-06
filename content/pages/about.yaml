@@ -35,17 +35,12 @@ sections:
       - Strategy sessions by Zoom, phone or in person
       - Video calls and video walkthroughs if you're moving from out of town
 
-  - id: results
-    type: results
-    heading: Recent results
-    keys: [uk-doctors, bc-seller]
-
   - id: reviews
     type: text
     preview_only: true
     heading: What clients say
     body: ""
-    note: Google reviews and the U.K. doctors' quote go here once you have them (reminder set for Monday, October 12). This section stays hidden on the live site until then.
+    note: Your 5-star Google reviews and what clients said go here once you have them. This section stays hidden on the live site until then.
 
   - id: licence
     type: text
