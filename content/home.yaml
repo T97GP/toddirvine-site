@@ -23,7 +23,9 @@ hero:
 
 valuation:
   heading: Get your free home valuation
-  text: Find out what your home is worth, with a personal valuation from me within 24 hours. It's free, with no obligation to list.
+  lines:
+    - The right price will make or break a home sale.
+    - Equip yourself with information on the current market in your neighbourhood.
   button: Request my free valuation
   url: /sellers/home-valuation/
 

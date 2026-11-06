@@ -32,7 +32,9 @@
 <section class="home-band home-band--dark" aria-labelledby="valuation-heading">
   <div class="wrap home-band__center">
     <h2 id="valuation-heading">{{ page.valuation.heading }}</h2>
-    <p>{{ page.valuation.text }}</p>
+    {% for line in page.valuation.lines %}
+    <p{% if loop.first %} class="home-band__lead"{% endif %}>{{ line }}</p>
+    {% endfor %}
     <a class="home-btn" href="{{ page.valuation.url }}">{{ page.valuation.button }}</a>
   </div>
 </section>

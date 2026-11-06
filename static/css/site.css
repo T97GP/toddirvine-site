@@ -837,6 +837,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 .home-band--blue p { color: #e1e9f2; }
 .home-band__center { text-align: center; }
 .home-band__center p { margin: 0 auto 1.5rem; }
+.home-band__center .home-band__lead { margin-bottom: 0.4rem; color: var(--white); font-size: 1.2rem; font-weight: 600; }
 .home-band__row {
   display: flex;
   flex-wrap: wrap;
