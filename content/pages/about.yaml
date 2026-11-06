@@ -12,15 +12,6 @@ actions:
     url: tel:+15873437310
 
 sections:
-  - id: how
-    type: text
-    heading: How I work
-    body: |
-      Before we look at a single house or set a price, I want to know why you're moving. What's behind it, why it matters now, and what changes for you once it's done. Then we build the plan together, around your timeline.
-
-      Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers backed by facts, and a plan that puts your best interests first.
-    note: Want to add your background, like what you did before real estate, or something personal, like family or what you do outside work? Tell me what you'd like said and I'll add it.
-
   - id: promises
     type: promises
     tone: stone
