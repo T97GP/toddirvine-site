@@ -12,15 +12,6 @@ actions:
     url: /search/
 
 sections:
-  - id: who
-    type: text
-    heading: Who I help
-    body: |
-      - First-time buyers
-      - Families who need more space
-      - Move-up buyers
-      - People relocating to Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge
-
   # Same buying process as Team Troy Irvine (troyirvine.com buy page, Nov 6, 2026), with Todd's name.
   - id: plan
     type: steps
