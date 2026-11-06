@@ -19,7 +19,18 @@
       <nav aria-label="Main">
         <ul>
           {% for item in site.nav %}
+          {% if item.children is defined %}
+          <li class="menu-mobile__group">
+            <span class="menu-mobile__label">{{ item.label }}</span>
+            <ul>
+              {% for child in item.children %}
+              <li><a href="{{ child.url }}"{% if current_path == child.url %} aria-current="page"{% endif %}>{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% else %}
           <li><a href="{{ item.url }}"{% if current_path == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {% endif %}
           {% endfor %}
         </ul>
       </nav>
@@ -29,8 +40,36 @@
   <nav class="menu-desktop" aria-label="Main">
     <ul class="wrap">
       {% for item in site.nav %}
+      {% if item.children is defined %}
+      {% set inside = current_path in item.children | map(attribute='url') | list %}
+      <li>
+        <details class="menu-more">
+          <summary{% if inside %} class="is-current"{% endif %}>{{ item.label }}</summary>
+          <ul>
+            {% for child in item.children %}
+            <li><a href="{{ child.url }}"{% if current_path == child.url %} aria-current="page"{% endif %}>{{ child.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+      {% else %}
       <li><a href="{{ item.url }}"{% if current_path == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endif %}
       {% endfor %}
     </ul>
   </nav>
 </header>
+
+<script>
+  // Close the "More" menu when clicking elsewhere or pressing Escape.
+  (function () {
+    var more = document.querySelector(".menu-more");
+    if (!more) return;
+    document.addEventListener("click", function (e) {
+      if (more.open && !more.contains(e.target)) more.open = false;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && more.open) { more.open = false; more.querySelector("summary").focus(); }
+    });
+  })();
+</script>

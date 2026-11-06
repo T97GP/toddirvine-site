@@ -30,14 +30,16 @@ nav:
     url: /buyers/
   - label: Sellers
     url: /sellers/
-  - label: Areas
-    url: /areas/
   - label: Medical professional relocation
     url: /medical-relocation/
-  - label: Resources
-    url: /resources/
-  - label: About
-    url: /about/
+  - label: More
+    children:
+      - label: Resources
+        url: /resources/
+      - label: About
+        url: /about/
+      - label: Areas
+        url: /areas/
 
 book_call_url: /book-a-call/
 privacy_url: /privacy/

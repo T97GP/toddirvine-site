@@ -226,6 +226,49 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 
 .menu-mobile { display: none; }
 
+/* "More" dropdown on computers */
+.menu-more { position: relative; }
+.menu-more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ink);
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+.menu-more summary::-webkit-details-marker { display: none; }
+.menu-more summary::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: -0.2rem;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.menu-more[open] summary::after { margin-top: 0.15rem; transform: rotate(-135deg); }
+.menu-more summary:hover,
+.menu-more summary.is-current,
+.menu-more[open] summary { color: var(--accent); }
+.menu-more summary.is-current { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
+.menu-desktop .menu-more ul {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 50%;
+  z-index: 30;
+  display: block;
+  min-width: 11rem;
+  margin: 0;
+  padding: 0.4rem 0;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1px solid var(--rule);
+  box-shadow: 0 8px 24px rgba(34, 41, 47, 0.12);
+}
+.menu-desktop .menu-more li a { display: block; padding: 0.55rem 1.1rem; }
+.menu-desktop .menu-more li a:hover { background: var(--accent-tint); text-decoration: none; }
+
 /* ---------- Hero ---------- */
 
 .hero { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
@@ -995,6 +1038,9 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   .menu-mobile ul { margin: 0; padding: 0.5rem var(--gutter) 1rem; list-style: none; }
   .menu-mobile li + li { border-top: 1px solid var(--rule); }
   .menu-mobile a { display: block; padding-block: 0.85rem; font-size: 1.1rem; }
+  .menu-mobile__label { display: block; padding-top: 0.85rem; color: var(--muted); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .menu-mobile__group ul { padding: 0 0 0 1rem; }
+  .menu-mobile__group li + li { border-top: 0; }
 
   .hero__grid,
   .areas__grid,

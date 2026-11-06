@@ -17,7 +17,9 @@
     <nav class="site-footer__nav" aria-label="Footer">
       <ul>
         {% for item in site.nav %}
-        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% for link in (item.children if item.children is defined else [item]) %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
         {% endfor %}
         <li><a href="{{ site.privacy_url }}">Privacy policy</a></li>
       </ul>
