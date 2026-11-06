@@ -11,7 +11,6 @@ sections:
     type: form
     form: contact
     heading: Send me a message
-    intro: Send me a note and I'll get back to you personally.
 
   - id: reach
     type: contact
