@@ -12,7 +12,8 @@
 <section class="home-hero{% if page.hero.image %} home-hero--photo{% endif %}"
   {% if page.hero.image %}style="--hero-image: url('/{{ page.hero.image }}')"{% endif %}>
   <div class="wrap">
-    <h1>{{ page.hero.headline }}</h1>
+    {% set head = page.hero.headline.split('? ', 1) %}
+    <h1>{% if head | length == 2 %}{{ head[0] }}? <span class="home-hero__line">{{ head[1] }}</span>{% else %}{{ page.hero.headline }}{% endif %}</h1>
     <p class="home-hero__supporting">{{ page.hero.supporting }}</p>
     <div class="home-hero__boxes">
       {% for box in page.hero.boxes %}
