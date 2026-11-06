@@ -35,6 +35,11 @@ def md(text: str) -> Markup:
     return Markup(markdown.markdown(text or ""))
 
 
+def slug(text: str) -> str:
+    """'O'Brien Lake' -> 'obrien-lake'"""
+    return re.sub(r"[^a-z0-9]+", "-", text.lower().replace("'", "")).strip("-")
+
+
 def plain(text: str) -> str:
     """Markdown text with the formatting removed (for structured data)."""
     stripped = re.sub(r"<[^>]+>", "", markdown.markdown(text or ""))
@@ -85,6 +90,7 @@ def make_env() -> Environment:
         lstrip_blocks=True,
     )
     env.filters["md"] = md
+    env.filters["slug"] = slug
     env.globals["faq_entities"] = faq_entities
     env.globals["agent_schema"] = agent_schema
     return env
@@ -98,6 +104,8 @@ def write(path: Path, text: str) -> None:
 def out_path(url_path: str) -> Path:
     """'/buyers/' -> dist/buyers/index.html"""
     clean = url_path.strip("/")
+    if clean == "404":
+        return DIST / "404.html"  # Cloudflare Pages serves this for missing pages
     return DIST / clean / "index.html" if clean else DIST / "index.html"
 
 

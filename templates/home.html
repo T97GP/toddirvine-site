@@ -1,145 +1,210 @@
 {% extends "base.html" %}
-{% from "partials/macros.html" import picture, preview_note, results_grid %}
+{% from "partials/macros.html" import picture, preview_note %}
+
+{% block head %}
+  <link rel="preload" href="/fonts/montserrat-variable.woff" as="font" type="font/woff" crossorigin>
+{% endblock %}
 
 {% block content %}
-<section class="hero">
-  <div class="wrap hero__grid">
-    <div class="hero__text">
-      <h1>{{ page.hero.headline }}</h1>
-      <p class="hero__supporting">{{ page.hero.supporting }}</p>
-      <p class="hero__actions">
-        <a class="button button--primary button--large" href="{{ site.book_call_url }}">Book a call</a>
-        <a class="button button--quiet button--large" href="/search/">Search homes</a>
-      </p>
-    </div>
-    <figure class="hero__photo">
-      {{ picture(page.hero.photo, page.hero.photo_alt, "(min-width: 900px) 40vw, 90vw", eager=true) }}
-      {% if not site.live %}<figcaption>{{ preview_note(site, page.hero.preview_note) }}</figcaption>{% endif %}
-    </figure>
-  </div>
-</section>
+<div class="home">
 
-<section class="paths" aria-label="Where to start">
-  <div class="wrap paths__grid">
-    {% for path in page.paths %}
-    <div class="paths__item">
-      <h2>{{ path.heading }}</h2>
-      <p>{{ path.text }}</p>
-      <a class="text-link" href="{{ path.url }}">{{ path.link_text }}</a>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="search-band" aria-labelledby="search-heading">
+{# 1. Hero: wide photo with two boxes, sell and buy #}
+<section class="home-hero{% if page.hero.image %} home-hero--photo{% endif %}"
+  {% if page.hero.image %}style="--hero-image: url('/{{ page.hero.image }}')"{% endif %}>
   <div class="wrap">
-    <h2 id="search-heading">{{ page.search.heading }}</h2>
-    <form class="quick-search" action="/search/" method="get">
-      <label>Area
-        <select name="area">
-          <option value="">Any area</option>
-          {% for area in page.areas['items'] %}
-          <option>{{ area.name }}</option>
+    <h1>{{ page.hero.headline }}</h1>
+    <p class="home-hero__supporting">{{ page.hero.supporting }}</p>
+    <div class="home-hero__boxes">
+      {% for box in page.hero.boxes %}
+      <div class="home-box">
+        <h2>{{ box.heading }}</h2>
+        <p>{{ box.text }}</p>
+        <a class="home-btn" href="{{ box.url }}">{{ box.button }}</a>
+      </div>
+      {% endfor %}
+    </div>
+    {% if not page.hero.image %}{{ preview_note(site, page.hero.preview_note) }}{% endif %}
+  </div>
+</section>
+
+{# 2. Free home valuation band #}
+<section class="home-band home-band--dark" aria-labelledby="valuation-heading">
+  <div class="wrap home-band__center">
+    <h2 id="valuation-heading">{{ page.valuation.heading }}</h2>
+    <p>{{ page.valuation.text }}</p>
+    <a class="home-btn" href="{{ page.valuation.url }}">{{ page.valuation.button }}</a>
+  </div>
+</section>
+
+{# 3. New listings #}
+<section class="home-section" aria-labelledby="listings-heading">
+  <div class="wrap">
+    <div class="home-section__head">
+      <h2 id="listings-heading">{{ page.listings.heading }}</h2>
+      <a class="home-more" href="{{ page.listings.url }}">{{ page.listings.link_text }} <span aria-hidden="true">›</span></a>
+    </div>
+    {% if not site.live %}
+    <div class="listing-grid" aria-hidden="true">
+      {% for i in range(3) %}
+      <div class="listing-card listing-card--placeholder">
+        <div class="listing-card__photo">Listing photo</div>
+        <div class="listing-card__body">
+          <span class="listing-card__line listing-card__line--price"></span>
+          <span class="listing-card__line"></span>
+          <span class="listing-card__line listing-card__line--short"></span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {{ preview_note(site, page.listings.note) }}
+  </div>
+</section>
+
+{# 4. Get to know Todd #}
+<section class="home-section home-section--stone" aria-labelledby="about-heading">
+  <div class="wrap">
+    <h2 id="about-heading" class="home-section__title">{{ page.about.heading }}</h2>
+    <div class="home-about">
+      <figure class="person-card">
+        {{ picture(page.about.photo, page.about.photo_alt, "(min-width: 900px) 26rem, 90vw") }}
+        <figcaption class="person-card__caption">
+          <span class="person-card__role">{{ page.about.role }}</span>
+          <span class="person-card__name">{{ site.agent.name }}</span>
+          <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a>
+          <a href="mailto:{{ site.agent.email }}">{{ site.agent.email }}</a>
+        </figcaption>
+      </figure>
+      <div class="home-about__text">
+        <p class="home-about__lead">{{ page.about.text }}</p>
+        <ul class="home-checks">
+          {% for item in page.about.promises %}
+          <li>{{ item }}</li>
           {% endfor %}
-        </select>
-      </label>
-      <label>Maximum price
-        <select name="max_price">
-          <option value="">Any price</option>
-          <option value="300000">$300,000</option>
-          <option value="400000">$400,000</option>
-          <option value="500000">$500,000</option>
-          <option value="600000">$600,000</option>
-          <option value="800000">$800,000</option>
-          <option value="1000000">$1,000,000</option>
-        </select>
-      </label>
-      <label>Bedrooms
-        <select name="beds">
-          <option value="">Any</option>
-          <option value="1">1 or more</option>
-          <option value="2">2 or more</option>
-          <option value="3">3 or more</option>
-          <option value="4">4 or more</option>
-          <option value="5">5 or more</option>
-        </select>
-      </label>
-      <button class="button button--primary" type="submit">Search homes</button>
+        </ul>
+        <div class="home-results">
+          {% for key in page.about.results_keys %}
+          {% set r = results[key] %}
+          <div class="home-result">
+            <p class="home-result__figure">{{ r.figure }} <span>{{ r.figure_label }}</span></p>
+            <p>{{ r.story }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <p class="home-about__actions">
+          <a class="home-btn" href="{{ site.book_call_url }}">Book a call</a>
+          <a class="home-more" href="{{ page.about.url }}">{{ page.about.link_text }} <span aria-hidden="true">›</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# 5. Medical professional relocation #}
+<section class="home-band home-band--blue" aria-labelledby="medical-heading">
+  <div class="wrap home-band__row">
+    <div>
+      <h2 id="medical-heading">{{ page.medical.heading }}</h2>
+      <p>{{ page.medical.text }}</p>
+    </div>
+    <a class="home-btn home-btn--light" href="{{ page.medical.url }}">{{ page.medical.button }}</a>
+  </div>
+</section>
+
+{# 6. Reviews: only shown in preview until there are real reviews #}
+{% if not site.live %}
+<section class="home-section" aria-labelledby="reviews-heading">
+  <div class="wrap">
+    <h2 id="reviews-heading" class="home-section__title">{{ page.reviews.heading }}</h2>
+    <div class="review-grid" aria-hidden="true">
+      {% for i in range(3) %}
+      <div class="review-card">
+        <span class="review-card__quote">“</span>
+        <span class="listing-card__line"></span>
+        <span class="listing-card__line"></span>
+        <span class="listing-card__line listing-card__line--short"></span>
+        <span class="review-card__stars">★★★★★</span>
+      </div>
+      {% endfor %}
+    </div>
+    {{ preview_note(site, page.reviews.note) }}
+  </div>
+</section>
+{% endif %}
+
+{# 7. Get in touch #}
+<section class="home-band home-band--dark" aria-labelledby="contact-heading">
+  <div class="wrap home-band__row">
+    <div>
+      <h2 id="contact-heading">{{ page.contact.heading }}</h2>
+      <p>{{ page.contact.text }} Or call me at <a href="tel:{{ site.agent.phone_tel }}">{{ site.agent.phone_display }}</a>.</p>
+    </div>
+    <a class="home-btn" href="{{ site.book_call_url }}">{{ page.contact.button }} <span aria-hidden="true">›</span></a>
+  </div>
+</section>
+
+{# 8. Search bar #}
+<section class="home-section home-section--tight" aria-labelledby="search-heading">
+  <div class="wrap">
+    <h2 id="search-heading" class="home-section__title">{{ page.search.heading }}</h2>
+    <form class="home-search" action="/search/" method="get" role="search">
+      <label class="visually-hidden" for="hs-q">Where</label>
+      <input id="hs-q" name="q" type="search" placeholder="{{ page.search.placeholder }}">
+      <label class="visually-hidden" for="hs-price">Maximum price</label>
+      <select id="hs-price" name="max_price">
+        <option value="">Price</option>
+        <option value="300000">Up to $300K</option>
+        <option value="400000">Up to $400K</option>
+        <option value="500000">Up to $500K</option>
+        <option value="600000">Up to $600K</option>
+        <option value="800000">Up to $800K</option>
+        <option value="1000000">Up to $1M</option>
+      </select>
+      <label class="visually-hidden" for="hs-beds">Bedrooms</label>
+      <select id="hs-beds" name="beds">
+        <option value="">Beds</option>
+        <option value="1">1+</option>
+        <option value="2">2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+        <option value="5">5+</option>
+      </select>
+      <button class="home-btn" type="submit">Search</button>
     </form>
     {{ preview_note(site, page.search.note) }}
   </div>
 </section>
 
-<section class="promises" aria-labelledby="promises-heading">
+{# 9. Search by price #}
+<section class="home-section home-section--tight" aria-labelledby="prices-heading">
   <div class="wrap">
-    <div class="bracket">
-      <h2 id="promises-heading">{{ page.promises.heading }}</h2>
-      <ul class="promises__list">
-        {% for item in page.promises['items'] %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="results" aria-labelledby="results-heading">
-  <div class="wrap">
-    <h2 id="results-heading">{{ page.results.heading }}</h2>
-    {{ results_grid(results, page.results['keys']) }}
-  </div>
-</section>
-
-<section class="areas" aria-labelledby="areas-heading">
-  <div class="wrap areas__grid">
-    <div class="areas__intro">
-      <h2 id="areas-heading">{{ page.areas.heading }}</h2>
-      <p>{{ page.areas.intro }}</p>
-      <a class="text-link" href="{{ page.areas.url }}">{{ page.areas.link_text }}</a>
-    </div>
-    <ul class="areas__list">
-      {% for area in page.areas['items'] %}
-      <li>
-        <a href="{{ area.url }}">
-          <span class="areas__name">{{ area.name }}</span>
-          {% if area.detail is defined %}<span class="areas__detail">{{ area.detail }}</span>{% endif %}
-        </a>
-      </li>
+    <h2 id="prices-heading" class="home-section__title">{{ page.prices.heading }}</h2>
+    <ul class="tile-grid">
+      {% for p in page.prices['items'] %}
+      <li><a class="tile" href="{{ p.url }}">{{ p.label }} <span aria-hidden="true">›</span></a></li>
       {% endfor %}
     </ul>
   </div>
 </section>
 
-<section class="listings" aria-labelledby="listings-heading">
+{# 10. Neighbourhoods #}
+{% for group in page.neighbourhoods.groups %}
+<section class="home-section home-section--tight" aria-labelledby="hood-{{ loop.index }}">
   <div class="wrap">
-    <h2 id="listings-heading">{{ page.listings.heading }}</h2>
-    {{ preview_note(site, page.listings.note) }}
+    <h2 id="hood-{{ loop.index }}" class="home-section__title">{{ group.heading }}</h2>
+    <ul class="tile-grid">
+      {% for name in group['items'] %}
+      <li><a class="tile" href="{{ group.base }}{{ name | slug }}/">{{ name }} <span aria-hidden="true">›</span></a></li>
+      {% endfor %}
+    </ul>
+    {% if loop.last %}{{ preview_note(site, page.neighbourhoods.note) }}{% endif %}
   </div>
 </section>
+{% endfor %}
 
-<section class="meet" aria-labelledby="meet-heading">
-  <div class="wrap meet__grid">
-    <figure class="meet__photo">
-      {{ picture(page.about.photo, page.about.photo_alt, "(min-width: 900px) 30vw, 80vw") }}
-    </figure>
-    <div class="meet__text">
-      <h2 id="meet-heading">{{ page.about.heading }}</h2>
-      <p>{{ page.about.text }}</p>
-      <a class="text-link" href="{{ page.about.url }}">{{ page.about.link_text }}</a>
-    </div>
-  </div>
-</section>
-
-<section class="market" aria-labelledby="market-heading">
-  <div class="wrap">
-    <h2 id="market-heading">{{ page.market.heading }}</h2>
-    {{ preview_note(site, page.market.note) }}
-  </div>
-</section>
-
-{% include "partials/closing.html" %}
+</div>
 
 <script type="application/ld+json">
-{{ agent_schema(site, page.areas['items'] | map(attribute='name') | list) | tojson }}
+{{ agent_schema(site, page.service_areas) | tojson }}
 </script>
 {% endblock %}

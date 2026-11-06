@@ -1,0 +1,20 @@
+path: /404/
+noindex: true
+nav_label: Page not found
+title: Page not found | Todd Irvine
+description: This page couldn't be found on ToddIrvine.ca.
+
+heading: This page isn't here.
+intro: It may have moved, or it isn't built yet. Try the menu above, or reach me directly.
+
+sections:
+  - id: missing
+    type: text
+    heading: Looking for something specific?
+    body: |
+      Start from the [homepage](/), see how [buying](/buyers/) or [selling](/sellers/) works, or [book a call](/book-a-call/) and I'll help you find it.
+    note: Area guides, the listings search and market updates are still being built, so those links land here for now.
+
+  - id: reach
+    type: contact
+    heading: Reach me directly

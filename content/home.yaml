@@ -1,4 +1,6 @@
 # Homepage content. Edit the words here; the layout stays the same.
+# Layout follows the same type of homepage as troyirvine.com (Nov 6, 2026),
+# with Todd's own words, photos and blue colours.
 
 title: Grande Prairie realtor | Todd Irvine, Real Broker
 description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith or Beaverlodge? Free buyer consultations and free home valuations within 24 hours from Todd Irvine, REALTOR® with Real Broker.
@@ -6,73 +8,103 @@ description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmo
 hero:
   headline: Buying or selling in Grande Prairie? Let's build the right strategy to accomplish your real estate goals today.
   supporting: Serving Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+  # Wide Grande Prairie photo, e.g. img/hero-grande-prairie.jpg. Leave empty to show the blue background.
+  image: ""
+  preview_note: Your wide Grande Prairie photo goes behind this section, from the photographer or one you own.
+  boxes:
+    - heading: Sell with Todd
+      text: A free home valuation within 24 hours, seller marketing paid by me, and an update from me every week.
+      button: I'm ready to sell
+      url: /sellers/
+    - heading: Buy with Todd
+      text: A free buyer consultation to start, then a clear plan from pre-approval to possession, built around your timeline.
+      button: I'm looking to buy
+      url: /buyers/
+
+valuation:
+  heading: Get your free home valuation
+  text: Find out what your home is worth, with a personal valuation from me within 24 hours. It's free, with no obligation to list.
+  button: Request my free valuation
+  url: /sellers/home-valuation/
+
+listings:
+  heading: New listings for sale
+  link_text: More listings
+  url: /search/
+  note: New Pillar 9 listings fill these cards once the listings feed is connected. Residential only, no rentals or commercial.
+
+about:
+  heading: Get to know Todd Irvine
   photo: todd-portrait-standing
   photo_alt: Todd Irvine, REALTOR® with Real Broker in Grande Prairie
-  preview_note: A local Grande Prairie photo from the photographer replaces this portrait.
-
-paths:
-  - heading: Buyers
-    text: How buying works here, from pre-approval to possession, with a free consultation to start.
-    link_text: See the buyer plan
-    url: /buyers/
-  - heading: Sellers
-    text: A free valuation within 24 hours, marketing paid by me, and an update from me every week.
-    link_text: See the seller plan
-    url: /sellers/
-  - heading: Medical professional relocation
-    text: Moving here for a healthcare job? Plan your purchase by video or phone call before you arrive.
-    link_text: Plan your move
-    url: /medical-relocation/
-
-search:
-  heading: Search homes for sale
-  note: The search connects to Pillar 9 listings before launch.
-
-promises:
-  heading: What you can count on
-  items:
+  role: REALTOR® with Real Broker
+  text: Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers and a plan built around your timeline. I'm a REALTOR® with Real Broker, based in Grande Prairie.
+  promises:
     - Free buyer consultations
     - Free home valuations within 24 hours
     - Weekly updates for sellers
     - Seller marketing paid by me
-
-areas:
-  heading: Where I work
-  intro: Every area gets its own guide, with schools, parks, shopping and live listings.
-  items:
-    - name: Grande Prairie
-      detail: Neighbourhood by neighbourhood
-      url: /areas/grande-prairie/
-    - name: Grande Prairie County
-      detail: Area by area
-      url: /areas/grande-prairie-county/
-    - name: Clairmont
-      url: /areas/clairmont/
-    - name: Sexsmith
-      url: /areas/sexsmith/
-    - name: Beaverlodge
-      url: /areas/beaverlodge/
-  link_text: Explore all areas
-  url: /areas/
-
-results:
-  heading: Recent results
-  keys: [uk-doctors, bc-seller]   # from content/results.yaml
-
-listings:
-  heading: New listings in your areas
-  note: New Pillar 9 listings show here once the listings feed is connected.
-
-about:
-  heading: I'm Todd Irvine.
-  text: Clients tell me I'm on top of everything, and that's how I run every move. You get quick replies, straight answers and a plan built around your timeline. I'm a REALTOR® with Real Broker, based in Grande Prairie.
-  photo: todd-portrait-seated
-  photo_alt: Todd Irvine seated, smiling
+    - Strategy sessions by Zoom, phone or in person
+  results_keys: [uk-doctors, bc-seller]   # from content/results.yaml
   link_text: How I work
   url: /about/
 
-market:
-  heading: Market updates
-  note: The first monthly market update publishes at launch.
-  url: /areas/market-updates/
+medical:
+  heading: Moving here for a healthcare job?
+  text: Plan your home search by video or phone call before you arrive, with video walkthroughs of homes and a timeline worked back from your start date.
+  button: Plan your move
+  url: /medical-relocation/
 
+reviews:
+  heading: What my clients say
+  note: Your Google reviews show here once you have them. This section stays hidden on the live site until then.
+
+contact:
+  heading: Get in touch with Todd
+  text: Book a call by Zoom, phone or in person.
+  button: Book a call
+
+search:
+  heading: Search homes for sale
+  placeholder: City, community or neighbourhood
+  note: The search connects to Pillar 9 listings before launch.
+
+prices:
+  heading: Search homes by price
+  items:
+    - {label: "Under $200K", url: "/search/?max_price=200000"}
+    - {label: "$200K to $300K", url: "/search/?min_price=200000&max_price=300000"}
+    - {label: "$300K to $400K", url: "/search/?min_price=300000&max_price=400000"}
+    - {label: "$400K to $500K", url: "/search/?min_price=400000&max_price=500000"}
+    - {label: "$500K to $600K", url: "/search/?min_price=500000&max_price=600000"}
+    - {label: "$600K to $700K", url: "/search/?min_price=600000&max_price=700000"}
+    - {label: "$700K to $800K", url: "/search/?min_price=700000&max_price=800000"}
+    - {label: "Over $800K", url: "/search/?min_price=800000"}
+    - {label: "Acreages", url: "/search/?type=acreage"}
+
+# Neighbourhood groups and names as listed on troyirvine.com (Nov 6, 2026).
+# Final names get checked against Pillar 9's area names before launch.
+neighbourhoods:
+  note: Each tile opens that area's guide and its listings. Live listing counts show once the Pillar 9 feed is connected.
+  groups:
+    - heading: Grande Prairie southwest homes for sale
+      base: /areas/grande-prairie/
+      items: [Kensington, Mission Heights, O'Brien Lake, Pinnacle Ridge, Southview, Stone Ridge, Swanavon, Westpointe]
+    - heading: Grande Prairie southeast homes for sale
+      base: /areas/grande-prairie/
+      items: [Cobblestone, Country Club Estates, Countryside North, Countryside South, Fieldbrook, Highland Park, Patterson Place, Riverstone, Signature Falls, Smith, Summerside]
+    - heading: Grande Prairie northwest homes for sale
+      base: /areas/grande-prairie/
+      items: [Arbour Hills, Avondale, College Park, Gateway, Northridge, Royal Oaks, Westgate]
+    - heading: Grande Prairie northeast homes for sale
+      base: /areas/grande-prairie/
+      items: [Copperwood, Crystal Heights, Crystal Lake Estates, Crystal Landing, Crystal Ridge, Hillside, Ivy Lake Estates, Lakeland, Mountview, Scenic Ridge, Summit]
+    - heading: Grande Prairie County homes and acreages for sale
+      base: /areas/grande-prairie-county/
+      items: [Carriage Lane Estates, Deer Ridge, Maple Ridge Estates, Tamarack Estates, Taylor Estates, The Ranch, Wedgewood, Westlake Village, Whispering Ridge, Willowood Estates]
+    - heading: Clairmont, Sexsmith and Beaverlodge homes for sale
+      base: /areas/
+      items: [Clairmont, Sexsmith, Beaverlodge]
+
+# The five service areas (used for structured data that search engines and AI tools read).
+service_areas: [Grande Prairie, Grande Prairie County, Clairmont, Sexsmith, Beaverlodge]
