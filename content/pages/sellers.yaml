@@ -7,11 +7,18 @@ heading: Selling your home in Grande Prairie
 intro: Start with a free valuation of your home within 24 hours. From there, you get a price built on recent sales, marketing I pay for, and an update from me every week until it's sold.
 actions:
   - label: Get my free valuation
-    url: /sellers/home-valuation/
+    url: "#valuation"
   - label: Call Now
     url: tel:+15873437310
 
 sections:
+  - id: valuation
+    type: form
+    form: valuation
+    tone: stone
+    heading: Get your free home valuation
+    intro: Tell me about your home and I'll send you a personal valuation within 24 hours.
+
   - id: what-you-get
     type: promises
     heading: What you get
