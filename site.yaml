@@ -54,9 +54,9 @@ booking:
   embed_src: ""
   page_url: ""
 
-# Closing call to action at the bottom of every page: one line and a Book a call button.
+# Closing call to action at the bottom of every page: one line and a Call Now button.
 closing:
-  text: Book a call by Zoom, phone or in person.
+  text: Call now, or meet by Zoom or in person.
 
 # Shown in the footer of every page.
 solicitation_notice: No portion of this website is intended to solicit listings already represented by another agent.
