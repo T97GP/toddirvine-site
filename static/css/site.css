@@ -700,6 +700,18 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
 }
 .booking-placeholder p { margin: 0; font-size: 1.2rem; }
 
+/* Pillar 9 Matrix map search */
+.idx-embed {
+  margin-top: 1.5rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--white);
+  overflow: hidden;
+}
+.idx-embed iframe { display: block; width: 100%; height: 56rem; border: 0; }
+.idx-embed__fallback { margin-top: 0.75rem; color: var(--muted); font-size: 0.95rem; }
+.idx-embed__notice { margin-top: 0.5rem; color: var(--muted); font-size: 0.85rem; max-width: 90ch; }
+
 /* Source lists on guides */
 .sources { margin: 1rem 0 0; padding-left: 1.2em; color: var(--muted); font-size: 0.95rem; }
 .sources li { margin-bottom: 0.4em; max-width: 80ch; }
@@ -1098,6 +1110,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   .home-section__head { grid-template-columns: 1fr; text-align: center; }
   .home-section__head h2, .home-section__head .home-more { grid-column: 1; justify-self: center; }
   .booking-embed iframe { height: 52rem; }
+  .idx-embed iframe { height: 80vh; min-height: 34rem; }
   .hero__photo { justify-self: start; max-width: 22rem; }
 
   .paths__grid { grid-template-columns: 1fr; gap: 2rem; }

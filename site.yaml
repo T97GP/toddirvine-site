@@ -51,6 +51,11 @@ book_call_url: /book-a-call/   # the contact page (message form, phone, email)
 call_now_label: Call Now
 privacy_url: /privacy/
 
+# Pillar 9 Matrix IDX map search (created in Matrix > Settings > IDX Configuration, Nov 7, 2026).
+# Temporary until the RETS feed is connected.
+idx:
+  map_search_src: https://matrix.pillarnine.com/Matrix/public/IDX.aspx?idx=da6944e
+
 # Google Calendar booking page (Calendar > your appointment schedule > Share).
 # embed_src: the address inside src="..." from the "Website embed" code.
 # page_url: the booking page link, used if the calendar doesn't load.

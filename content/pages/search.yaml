@@ -1,0 +1,18 @@
+path: /search/
+nav_label: Search homes
+title: Search homes for sale in Grande Prairie | Todd Irvine, Real Broker
+description: Search homes for sale on the Pillar 9™ MLS® System in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge, with Todd Irvine, REALTOR® with Real Broker.
+
+heading: Search homes for sale
+intro: Move the map or use the search to find homes in Grande Prairie, Grande Prairie County, Clairmont, Sexsmith, Beaverlodge and beyond. See one you like? Call me and I'll set up a showing.
+actions:
+  - label: Call Now
+    url: tel:+15873437310
+  - label: Contact us
+    url: /book-a-call/#message
+
+sections:
+  - id: map-search
+    type: idx
+    heading: Map search
+    note: This is Pillar 9's Matrix map search for now. It gets replaced by listings built into your own site once the RETS feed is connected. Check the notice under the map against Pillar 9's Internet Rules.

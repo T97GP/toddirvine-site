@@ -115,6 +115,13 @@
       </div>
       {% endif %}
 
+    {% elif s.type == "idx" %}
+      <div class="idx-embed">
+        <iframe src="{{ site.idx.map_search_src }}" title="Map search of homes for sale on the Pillar 9™ MLS® System" loading="lazy"></iframe>
+      </div>
+      <p class="idx-embed__fallback">Map not loading? <a href="{{ site.idx.map_search_src }}" target="_blank" rel="noopener">Open the map search in a new tab</a>.</p>
+      <p class="idx-embed__notice">Data is supplied by Pillar 9™ MLS® System. Pillar 9™ is the owner of the copyright in its MLS® System. Data is deemed reliable but is not guaranteed accurate by Pillar 9™.</p>
+
     {% elif s.type == "sources" %}
       <ul class="sources">
         {% for src in s['items'] %}
