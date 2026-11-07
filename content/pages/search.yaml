@@ -12,7 +12,9 @@ actions:
     url: /book-a-call/#message
 
 sections:
-  - id: map-search
-    type: idx
-    heading: Map search
-    note: This is Pillar 9's Matrix map search for now. It gets replaced by listings built into your own site once the RETS feed is connected. Check the notice under the map against Pillar 9's Internet Rules.
+  - id: coming-soon
+    type: text
+    heading: Listings are on the way
+    body: |
+      A full search of homes for sale on the Pillar 9™ MLS® System is being built into this site. Until then, call me or send a message and I'll send you the homes that fit what you're looking for.
+    note: The Matrix map search didn't work in testing, so it's been taken down. This page gets the RETS feed listings once Pillar 9 connects it.

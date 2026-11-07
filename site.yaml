@@ -52,7 +52,7 @@ call_now_label: Call Now
 privacy_url: /privacy/
 
 # Pillar 9 Matrix IDX map search (created in Matrix > Settings > IDX Configuration, Nov 7, 2026).
-# Temporary until the RETS feed is connected.
+# Not used: the embed didn't work in testing (Nov 7, 2026). Listings will come from the RETS feed.
 idx:
   map_search_src: https://matrix.pillarnine.com/Matrix/public/IDX.aspx?idx=da6944e
 
