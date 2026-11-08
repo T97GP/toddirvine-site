@@ -21,19 +21,18 @@ sections:
   - id: plan
     type: steps
     tone: stone
-    heading: How selling works, step by step
+    heading: What happens next?
     items:
-      - title: A call
-        text: We talk about your home, your timeline and where you're headed next.
-      - title: Your valuation within 24 hours
-        text: A personal valuation of your home.
-      - title: Set the price
-        text: We choose a list price together, using comparable sales and what's currently for sale.
-      - title: Prepare and market
-        text: We get your home ready to show, and I launch the marketing at my cost.
-      - title: Weekly updates
-        text: Every week I update you on activity and what I recommend next.
-      - title: Offers and negotiation
-        text: I review every offer with you and negotiate the price and terms.
-      - title: Possession day
-        text: Once the conditions are cleared, your lawyer completes the sale and you hand over the keys.
+      - title: Reach out
+        text: Phone, text, Zoom or email. This conversation is so I can learn some details about your home and get started on a free market evaluation for you. Things like the address, the year of the home, upgrades, etc.
+      - title: I come see your property
+        text: I see your home to assess its condition and provide recommendations for what we can do to get you top dollar for your home.
+      - title: Game plan to get your home sold
+        text: |
+          This is where I get your home ready for market. There are many options available, depending on the type of home. This is all done at no cost to you. Services offered are:
+
+          - Professional photos
+          - 3D tour of the home for remote buyers
+          - Drone footage and aerial shots of the home
+          - The ability to bring in a home staging professional
+    note: Steps 4 to 6 (advertising, offers and closing) get added later.
