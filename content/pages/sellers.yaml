@@ -12,12 +12,6 @@ actions:
     url: tel:+15873437310
 
 sections:
-  - id: valuation
-    type: form
-    form: valuation
-    heading: Get your free home valuation
-    intro: Tell me about your home and I'll send you a personal valuation within 24 hours.
-
   - id: plan
     type: steps
     tone: stone
@@ -41,3 +35,9 @@ sections:
         text: "We document everything and get it all in writing. I'm making sure your interests are protected here. You worked hard for your home, now let me work hard for you!"
       - title: Finalize the deal and key exchange
         text: "Congratulations! You have sold your home. I'm happy for you & appreciate you putting your trust in me with this major decision. I'm happy to answer any questions you might have while we are going over the final stages."
+
+  - id: valuation
+    type: form
+    form: valuation
+    heading: Get your free home valuation
+    intro: Tell me about your home and I'll send you a personal valuation within 24 hours.
