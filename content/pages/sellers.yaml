@@ -16,24 +16,34 @@ sections:
     tone: stone
     heading: What happens next?
     items:
-      - title: Reach out
-        text: Phone, text, Zoom or email. This conversation is so I can learn some details about your home and get started on a free market evaluation for you. Things like the address, the year of the home, upgrades, etc.
-      - title: I come see your property
-        text: I see your home to assess its condition and provide recommendations for what we can do to get you top dollar for your home.
-      - title: Game plan to get your home sold
+      - title: Let’s talk about your home
         text: |
-          This is where I get your home ready for market. There are many options available, depending on the type of home. This is all done at no cost to you. Services offered are:
+          We’ll start with a phone call, text, email or Zoom, whichever works best for you. I’ll learn about your home, any upgrades you’ve made and what you’re hoping to accomplish. From there, I’ll begin preparing your complimentary home market evaluation.
+      - title: A visit to your property
+        text: |
+          I’ll visit your home to see its condition, features and improvements firsthand. We’ll discuss its potential market value and practical ways to help it show its best, so you know where to focus your time and effort.
+      - title: A plan built around your home
+        text: |
+          Together, we’ll create a pricing and preparation strategy that fits your home and goals. Depending on the property, marketing services may include:
 
-          - Professional photos
-          - 3D tour of the home for remote buyers
-          - Drone footage and aerial shots of the home
-          - The ability to bring in a home staging professional
-      - title: Marketing & open houses
-        text: "Your home's professional photos and video get targeted ad marketing, using Google, YouTube, Facebook, TikTok and Instagram. This exposes your home to people who are actually looking for a home like yours. I also host 2 open houses a month for your property. All of these expenses are paid by me."
-      - title: Receiving and accepting an offer
-        text: "We document everything and get it all in writing. I'm making sure your interests are protected here. You worked hard for your home, now let me work hard for you!"
-      - title: Finalize the deal and key exchange
-        text: "Congratulations! You have sold your home. I'm happy for you & appreciate you putting your trust in me with this major decision. I'm happy to answer any questions you might have while we are going over the final stages."
+          - Professional photography
+          - A 3D virtual tour for buyers viewing remotely
+          - Drone video and aerial photography
+          - A consultation with a home staging professional
+
+          I cover the cost of these marketing services.
+      - title: Get your home in front of buyers
+        text: |
+          I’ll showcase your home through targeted advertising on Google, YouTube, Facebook, Instagram and TikTok. I’ll also promote it to fellow Real Broker agents, my existing buyer network, past clients and the Grande Prairie Realtor Wants & Needs group, a private group where local real estate agents connect about their buyers’ needs.
+
+          I cover these marketing expenses and will keep you informed about buyer feedback along the way.
+      - title: Review offers with confidence
+        text: |
+          When an offer comes in, I’ll walk you through the price, conditions, possession date and other terms so you understand what it means for you. I’ll negotiate on your behalf and make sure agreed terms are documented, helping you make an informed decision at every step.
+      - title: From an accepted offer to moving day
+        text: |
+          Once you accept an offer, I’ll help you navigate the remaining conditions, deadlines and next steps toward possession. I’ll stay available to answer questions and coordinate the key handover so you feel supported through the final stage of your sale.
+    outro: Thinking about selling? Let’s start with a conversation about your home, your plans and what comes next.
 
   - id: valuation
     type: form

@@ -67,6 +67,7 @@
         </li>
         {% endfor %}
       </ol>
+      {% if s.outro is defined %}<p class="steps-outro">{{ s.outro }}</p>{% endif %}
 
     {% elif s.type == "promises" %}
       <div class="bracket bracket--left">
