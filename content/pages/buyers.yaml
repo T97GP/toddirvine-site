@@ -12,45 +12,37 @@ actions:
     url: /search/
 
 sections:
-  # Same buying process as Team Troy Irvine (troyirvine.com buy page, Nov 6, 2026), with Todd's name.
   - id: plan
     type: steps
     tone: stone
     heading: How buying a home works
-    groups:
-      - heading: Setting it all up
-        items:
-          - title: First meeting
-            text: The first meeting is how we understand your specific needs and wishes as a buyer. Todd will sit down with you to discuss each step of the home buying process, and the needed forms, financing, inspections, marketing, pricing, and negotiating.
-          - title: Get pre-approved
-            text: During the process of getting a pre-approval from a reputable lender, you will get a clearer picture of how you can financially support your home purchase. What's more, with a pre-approval, Todd can give you an edge over other buyers in today's competitive market.
-          - title: Describe your dream home
-            text: Todd will guide you into defining the criteria for your dream home, in terms of location, price, style or condition. He will lend his experience and knowledge of the local market to guide you to properties that match your needs for the best value, and save your time on home viewing by narrowing down the list to the best choices available.
-      - heading: Time to shop!
-        items:
-          - title: View homes
-            text: Once you have narrowed down the list of homes that fit your criteria, it's time to look at some houses! Todd will help you evaluate the homes, ask the right questions and look at the right places to make sure you have the information to make the best decision possible.
-          - title: Write the contract
-            text: It's time to prepare for negotiation, and it begins with a thorough reading of the purchase contract. Understanding the purchase agreement will boost your confidence when it comes to making the offer. Todd will go through each item of the purchase agreement with you, making sure that you are protected in all areas of the contract and in the best position to negotiate the purchase.
-          - title: Secure the offer with a deposit
-            text: Secure your offer and assure the seller that your bid is legitimate by placing a deposit on the house. Todd will advise you on the amount and how to keep it safe in a trust account for later, when the transaction is ready to be closed.
-      - heading: Execute the sale
-        items:
-          - title: Inspect the home
-            text: With the contract fully accepted and all conditions agreed on, a home inspection is typically allowed by most contracts. A home inspection will give you a better idea of the condition of the property you will be investing in. Todd can help you and your inspector thoroughly examine the home and plan on how to remedy any issues found with the house.
-          - title: Meet the conditions of the sale
-            text: With approved financing secured, it's time to clear the other conditions of the sale. All conditions need to be signed off by the date agreed upon for the purchase contract to continue. Todd will lend you his expertise to make sure that all conditions are met in a timely manner.
-          - title: Closing the deal
-            text: With all conditions cleared, execute the sale. Our brokerage experts will send all the needed documents to your lawyer. Todd will make sure that you and your lawyer are able to execute the closing documents completely and on time.
-      - heading: And time to move in!
-        items:
-          - title: Get home insurance
-            text: Real estate insurance will save you a ton of money in the event of catastrophe. Protect your investment by setting up home insurance a week or two in advance of the closing date. Todd can help you get the appropriate insurance for the location and condition of your house.
-          - title: Set up services
-            text: Before moving in, make sure that the services are running. Transfer your power, water, internet and other services to your new home on the possession date.
-          - title: Move in!
-            text: Once payment has been transferred, your lawyer can close the sale by authorizing the release of the keys. Closing day is the day you can start moving in to your new house.
-    outro: Congratulations on your move!
+    intro: "Buying a home is a big decision. Whether it’s your first home or your next chapter, I’ll help you understand the process, explore your options and feel confident about each step."
+    items:
+      - title: "Let’s talk about your plans"
+        text: "We’ll start with a conversation about what’s bringing you to the market, your timeline and what matters most to you. I’ll walk you through the buying process, explain the paperwork and answer your questions so you know what to expect."
+      - title: "Get clear on your budget"
+        text: "A mortgage pre-approval helps you understand your borrowing options before you start looking. If you need a mortgage professional, I can help you connect with one. We’ll focus your search on a price range that feels comfortable for you."
+      - title: "Find out what home means to you"
+        text: "From neighbourhoods and commute times to bedrooms, garage space and room for the family, we’ll work through your must-haves and preferences. This helps me narrow the search and send you homes that fit your needs."
+      - title: "Explore homes together"
+        text: "I’ll arrange viewings and help you look beyond the listing photos. We’ll discuss each home’s features, condition and potential drawbacks, and gather answers to the questions that matter to you."
+      - title: "Make an informed offer"
+        text: "When you find a home you want, we’ll review comparable sales and discuss an offer strategy. I’ll explain the price, conditions, deposit, possession date and other terms before you sign, then negotiate on your behalf."
+      - title: "Arrange your deposit"
+        text: "Once your offer is accepted, I’ll explain how and when to provide the deposit according to your purchase agreement. You’ll receive clear instructions about the deadline and where the funds need to go."
+      - title: "Take a closer look"
+        text: "If your offer includes an inspection condition, we’ll arrange a professional home inspection within the agreed timeline. You can ask the inspector questions, review their findings and discuss your options with me before deciding how to proceed."
+      - title: "Work through your conditions"
+        text: "I’ll help you track the deadlines and coordinate the steps related to your offer’s conditions, such as financing, inspection or document review. Before you make any decisions about removing conditions, we’ll confirm where things stand and what still needs attention."
+      - title: "Arrange your home insurance"
+        text: "Contact your insurance provider early to confirm coverage is available and arrange for it to begin when required for your purchase. Getting this underway ahead of time gives you room to address questions before possession."
+      - title: "Prepare for moving day"
+        text: "Arrange your utilities, internet and other services for your possession date. I’ll help you keep track of the remaining practical details so you can plan your move with fewer last-minute surprises."
+      - title: "Complete the closing steps"
+        text: "Your lawyer will guide you through the closing documents, required funds and legal transfer. I’ll coordinate with the people involved and stay available to help with questions as possession approaches."
+      - title: "Get your keys and settle in"
+        text: "Once closing is complete and the keys are authorized for release, it’s time to enjoy your new home. I’ll coordinate the key handover and remain available if questions come up after your move."
+    outro: "Ready to start your home search? Let’s talk about what you’re looking for and the best next step for you."
 
   - id: guides
     type: links
