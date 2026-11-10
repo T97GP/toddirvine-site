@@ -54,3 +54,7 @@ python -m http.server --directory dist 8000
 Lora (headings) is licensed under the SIL Open Font License 1.1. The file in `static/fonts/` is the original font, compressed to WOFF and otherwise unchanged. Body text uses each device's system font.
 
 Montserrat (homepage) is licensed under the SIL Open Font License 1.1 and has no Reserved Font Name. The file in `static/fonts/` is subset to Latin characters and compressed to WOFF; the licence is in `MONTSERRAT-LICENSE.txt`.
+
+## Listings
+
+Before building or changing anything that shows MLS® listing data, read `docs/listing-rules.md` and follow every item.
