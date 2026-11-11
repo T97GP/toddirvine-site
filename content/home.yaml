@@ -7,7 +7,7 @@ description: Buying or selling in Grande Prairie, Grande Prairie County, Clairmo
 
 hero:
   headline: "Buying or selling in Grande Prairie? The right strategy gets YOU to your goals"
-  supporting: Serving Grande Prairie, Grande Prairie County, Clairmont, Sexsmith and Beaverlodge.
+  supporting: ""
   # Wide Grande Prairie photo, e.g. img/hero-grande-prairie.jpg. Leave empty to show the blue background.
   image: ""
   preview_note: Your wide Grande Prairie photo goes behind this section, from the photographer or one you own.
@@ -18,7 +18,8 @@ hero:
       button: I'm ready to sell
       url: /sellers/
     - heading: Buy with Todd
-      text: "Todd puts your needs FIRST. Looking for your next home? Todd puts over a decade of negotiation experience behind your purchase to get you the BEST home at the BEST value."
+      lead: Find Your Next Home in Grande Prairie with Confidence
+      text: "Your needs always come first. With over a decade of negotiation experience, Todd is dedicated to helping you find the right home, make informed decisions, and secure the best possible value for your investment."
       button: I'm looking to buy
       url: /buyers/
 
