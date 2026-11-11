@@ -18,6 +18,9 @@ sections:
       - Apply for Alberta health care within 3 months
       - Exchange your driver's licence within 90 days
       - Register your vehicle in Alberta within 90 days
+      - Set up water, sewer and garbage
+      - Choose an electricity and natural gas retailer
+      - Register your kids for school
 
   - id: health
     type: text
