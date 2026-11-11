@@ -1,0 +1,13 @@
+<div class="review-grid review-grid--real review-grid--{{ reviews | length }}">
+  {% for r in reviews %}
+  <figure class="review-card review-card--real">
+    <span class="review-card__stars" role="img" aria-label="{{ r.stars }} out of 5 stars">{{ "★" * r.stars }}</span>
+    {% if r.text %}
+    <blockquote class="review-card__text">{{ r.text }}</blockquote>
+    {% else %}
+    <p class="review-card__text review-card__text--rating">{{ r.stars }}-star rating</p>
+    {% endif %}
+    <figcaption class="review-card__by"><span class="review-card__name">{{ r.name }}</span> <span class="review-card__source">{{ r.source }} review</span></figcaption>
+  </figure>
+  {% endfor %}
+</div>

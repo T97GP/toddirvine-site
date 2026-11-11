@@ -120,7 +120,8 @@ def build() -> None:
 
     env = make_env()
     results = load_yaml(ROOT / "content" / "results.yaml")
-    common = {"site": site, "results": results}
+    reviews = load_yaml(ROOT / "content" / "reviews.yaml") or []
+    common = {"site": site, "results": results, "reviews": reviews}
 
     # Homepage
     home = load_yaml(ROOT / "content" / "home.yaml")

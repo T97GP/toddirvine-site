@@ -90,6 +90,9 @@
         {% endfor %}
       </ul>
 
+    {% elif s.type == "reviews" %}
+      {% include "partials/reviews.html" %}
+
     {% elif s.type == "results" %}
       {{ results_grid(results, s['keys']) }}
 

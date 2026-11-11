@@ -18,8 +18,5 @@ actions:
 
 sections:
   - id: reviews
-    type: text
-    preview_only: true
-    heading: What clients say
-    body: ""
-    note: Your 5-star Google reviews and what clients said go here once you have them. This section stays hidden on the live site until then.
+    type: reviews
+    heading: What my clients say
