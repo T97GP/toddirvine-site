@@ -43,15 +43,3 @@ sections:
       - title: "Get your keys and settle in"
         text: "Once closing is complete and the keys are authorized for release, it’s time to enjoy your new home. I’ll coordinate the key handover and remain available if questions come up after your move."
     outro: "Ready to start your home search? Let’s talk about what you’re looking for and the best next step for you."
-
-  - id: guides
-    type: links
-    heading: Guides for your situation
-    items:
-      - title: First-time buyers
-        text: Where to start, and what to expect at each step.
-        url: /buyers/first-time-buyers/
-      - title: Larger family homes
-        text: Finding more space, with a sell-then-buy plan if you need to sell first.
-        url: /buyers/larger-family-homes/
-    note: Both guides are written next and launch with the site.
