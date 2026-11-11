@@ -19,6 +19,7 @@
       {% for box in page.hero.boxes %}
       <div class="home-box">
         <h2>{{ box.heading }}</h2>
+        {% if box.lead is defined and box.lead %}<p class="home-box__lead">{{ box.lead }}</p>{% endif %}
         <p>{{ box.text }}</p>
         <a class="home-btn" href="{{ box.url }}">{{ box.button }}</a>
       </div>

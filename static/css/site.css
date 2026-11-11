@@ -830,6 +830,7 @@ a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
   letter-spacing: 0.01em;
 }
 .home-box p { color: #eef2f6; font-size: 1.02rem; margin: 0 auto 1.5rem; }
+.home-box .home-box__lead { font-weight: 700; font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem; }
 .home-box .home-btn { margin-top: auto; width: 100%; max-width: 24rem; }
 .home-hero .preview-note { max-width: 40rem; margin: 1.5rem auto 0; }
 
