@@ -24,10 +24,10 @@ hero:
       url: /buyers/
 
 valuation:
-  heading: Get your free home valuation
+  heading: Discover What Your Home Is Worth
   lines:
-    - The right price will make or break a home sale.
-    - Equip yourself with information on the current market in your neighbourhood.
+    - "A successful home sale starts with the right price."
+    - "Get a complimentary home valuation and gain valuable insight into the Grande Prairie real estate market, so you can make informed decisions about your next move."
   button: Request my free valuation
   url: /sellers/home-valuation/
 
