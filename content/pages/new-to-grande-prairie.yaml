@@ -4,11 +4,11 @@ parent:
   label: Resources
   url: /resources/
 title: New to Grande Prairie? What to set up when you move | Todd Irvine
-description: Health care, your driver's licence and vehicle, utilities and schools. What to set up when you move to Grande Prairie, Alberta, with links to the official pages.
+description: Health care, your driver's licence and your vehicle. What to set up when you move to Grande Prairie, Alberta, with links to the official pages.
 
 heading: New to Grande Prairie? Here's what to set up.
 intro: The main things to sort out when you move here from another province or country, with links to the official pages so you can check the details for your situation.
-dateline: Utilities, internet and schools last checked November 11, 2026. Health care and driving last checked October 10, 2026.
+dateline: Last checked October 10, 2026
 
 sections:
   - id: at-a-glance
@@ -18,10 +18,6 @@ sections:
       - Apply for Alberta health care within 3 months
       - Exchange your driver's licence within 90 days
       - Register your vehicle in Alberta within 90 days
-      - Set up water, sewer and garbage
-      - Choose an electricity and natural gas retailer
-      - Set up phone and internet
-      - Register your kids for school
 
   - id: health
     type: text
@@ -44,132 +40,13 @@ sections:
 
       **Register your vehicle in Alberta within 90 days of moving here.** You'll need Alberta insurance first. A vehicle bought elsewhere in Canada may need an Alberta out-of-province inspection before it can be registered, so ask the registry agent whether yours does. ([Alberta.ca](https://www.alberta.ca/register-vehicle))
 
-  - id: utilities
-    type: text
-    heading: Utilities
-    body: |
-      **Water, sewer and garbage: Aquatera Utilities.** In the City of Grande Prairie, Aquatera provides water, wastewater and garbage collection ([City of Grande Prairie Utility Bylaw C-1365](https://cityofgp.com/sites/default/files/2026-01/C-1365%20Utility%20Bylaw%20-%20Office%20Consolidation%20-%20Effective%20March%201,%202026.pdf)). Aquatera also provides water and sewer in Clairmont ([County of Grande Prairie](https://www.countygp.ab.ca/home-property-environment/water-and-sewer-services/apply-for-water-or-sewer-services/)) and sets up utilities in Sexsmith ([Town of Sexsmith](https://sexsmith.ca/welcome-to-new-residents)).
-
-      - Phone: 780-538-0340
-      - Email: myaccount@aquatera.ca
-      - Website: [aquatera.ca](https://www.aquatera.ca/billing-rates-payments/open-close-transfer-account) (open, close or transfer an account)
-
-      **Beaverlodge: Town of Beaverlodge.** Fill out the Town's Utility Change Request Form and return it to the Town office. ([Town of Beaverlodge](https://beaverlodge.ca/?p=1962))
-
-      - Phone: 780-354-2201, Monday to Friday, 9 a.m. to 5 p.m.
-      - Email: utilities@beaverlodge.ca
-
-      **Rural properties: County of Grande Prairie.** Water and sewer depend on the property, so ask the County what serves the address. ([County of Grande Prairie](https://www.countygp.ab.ca/home-property-environment/utilities-and-internet/))
-
-      - Phone: 780-532-9722
-      - Email: info@countygp.ab.ca
-
-      **Recycling: Circular Materials.** Since October 1, 2026, Circular Materials runs residential recycling in the City of Grande Prairie. [Their Grande Prairie page](https://www.circularmaterials.ca/resident-communities/grande-prairie/) has the collection calendar, and their free app shows your pickup schedule.
-
-      **Electricity: ATCO Electric delivers it.** ATCO Electric is the electricity company listed in the [City of Grande Prairie's GP Guide](https://cityofgp.com/sites/default/files/docs/ecdev/GP%20Guide%20-%20English%202025%20-%20WEB.pdf). They look after the power lines, new connections and outages.
-
-      - General inquiries: 1-800-668-2248, Monday to Friday, 8 a.m. to 5 p.m. ([ATCO Electric](https://electric.atco.com/en-ca/about-us/contact.html))
-      - Electricity emergencies: 1-800-668-5506 ([ATCO Energy](https://www.atcoenergy.com/customer-care/moving))
-
-      **Natural gas: ATCO Gas delivers it.** ATCO Gas is the natural gas company listed in the [City of Grande Prairie's GP Guide](https://cityofgp.com/sites/default/files/docs/ecdev/GP%20Guide%20-%20English%202025%20-%20WEB.pdf).
-
-      - Grande Prairie office: 780-539-2400
-      - Natural gas emergencies: 1-800-511-3447 ([ATCO Energy](https://www.atcoenergy.com/customer-care/moving))
-
-      Some rural properties get natural gas from a gas co-op. The [Federation of Alberta Gas Co-ops](https://www.fedgas.com) can tell you which one serves an address. ([Utilities Consumer Advocate](https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/))
-
-      **Choosing who bills you.** In Alberta, the company that delivers your electricity and natural gas is set by where you live, but you choose the retailer you buy from. If you don't sign with a retailer, you're placed on your area's default rate. The [County of Grande Prairie](https://www.countygp.ab.ca/home-property-environment/utilities-and-internet/) lists [Direct Energy](https://www.directenergy.ca/), [Enmax](https://www.enmax.com/home) and [Just Energy](https://justenergy.com/) as options, and there are many more. The Utilities Consumer Advocate has the [full list of retailers](https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/) and a [cost comparison tool](https://ucahelps.alberta.ca/cost-comparison-tool/). You can reach them at 310-4822 in Alberta.
-
-  - id: internet
-    type: text
-    tone: stone
-    heading: Phone, internet and TV
-    body: |
-      These are the providers listed in the [City of Grande Prairie's GP Guide](https://cityofgp.com/sites/default/files/docs/ecdev/GP%20Guide%20-%20English%202025%20-%20WEB.pdf). What's available depends on your address, so check with each one before you sign up.
-
-      - **[Bell](https://www.bell.ca)**: mobile phone, internet and TV. 780-833-7020
-      - **[Eastlink](https://www.eastlink.ca)**: phone, internet and TV. 1-888-345-1111
-      - **[Telus](https://www.telus.com)**: home services 1-888-811-2323, mobility 1-866-558-2273
-      - **[Xplornet](https://www.xplornet.com)**: internet. 1-877-959-5717
-      - **[Galaxy Broadband](https://www.galaxybroadband.ca)**: satellite internet. 1-877-463-9728
-      - **[Rogers](https://www.rogers.com)**: mobile phone. 780-513-2355
-      - **[Fido](https://www.fido.ca)**: mobile phone. 1-888-481-3436
-      - **[Koodo](https://www.koodomobile.com)**: mobile phone. 1-866-995-6636
-
-      On a rural property, the County of Grande Prairie has information on [rural internet providers and towers](https://www.countygp.ab.ca/home-property-environment/utilities-and-internet/internet-towers/).
-
-  - id: schools
-    type: text
-    heading: Schools
-    body: |
-      Each school division has its own registration and its own boundaries. The school your child attends depends on your address, so check the boundary for any home you're considering before you buy.
-
-      ### Grande Prairie Public School Division
-
-      Public schools in the city. Division office: 780-532-4491. [Register](https://www.gppsd.ab.ca/registration) or [find your school by address](https://www.gppsd.ab.ca/our-division/our-schools/boundaries). Locations below are from the division's [boundary map](https://www.gppsd.ab.ca/download/435841), and grades and phone numbers are from its [school directory](https://www.gppsd.ab.ca/our-division/our-schools/school-directory).
-
-      - **[Alexander Forbes School](https://alexanderforbes.gppsd.ab.ca/)** (K to 8): Patterson. 780-532-1365
-      - **[Aspen Grove School](https://aspengrove.gppsd.ab.ca/)** (K to 8): by Country Club Estates. 780-538-3009
-      - **[Avondale School](https://avondale.gppsd.ab.ca/)** (K to 6): near 108 Avenue, west of 100 Street. 780-532-3230
-      - **[Crystal Park School](https://crystalpark.gppsd.ab.ca/)** (PreK to 8): on 116 Avenue, between Crystal Ridge and Crystal Lake Estates. 780-539-0333
-      - **[Derek Taylor Public School](https://derektaylor.gppsd.ab.ca/)** (K to 8): Mission Heights. 780-357-9174
-      - **[Hillside Community School](https://hillside.gppsd.ab.ca/)** (K to 6): north of 100 Avenue, between 98 Street and 92 Street. 780-532-0743
-      - **[I.V. Macklin Public School](https://ivmacklin.gppsd.ab.ca/)** (K to 8): between Crystal Heights and Ivy Lake Estates. 780-513-3391
-      - **[Isabel Campbell Public School](https://isabelcampbell.gppsd.ab.ca/)** (K to 8): Pinnacle Ridge. 780-532-7247
-      - **[Maude Clifford Public School](https://maudeclifford.gppsd.ab.ca/)** (K to 6): Lakeland. 780-357-3500
-      - **[Riverstone Public School](https://riverstone.gppsd.ab.ca/)** (K to 8): between Cobblestone and Riverstone. 780-532-1321
-      - **[Roy Bickell Public School](https://roybickell.gppsd.ab.ca/)** (K to 8): Royal Oaks. 780-830-3286
-      - **[Swanavon School](https://swanavon.gppsd.ab.ca/)** (PreK to 6): near 92 Avenue, west of Highland Park. 780-532-8885
-      - **[École Montrose](https://montrose.gppsd.ab.ca/)** (Preschool to 8, French Immersion): by Country Club Estates. 780-532-8861
-      - **[Grande Prairie Christian School](https://gpchristian.gppsd.ab.ca/)** (K to 9): between Westpointe and Pinnacle Ridge. 780-539-4566
-      - **[Parkside Montessori](https://parksidemontessori.gppsd.ab.ca/)** (Preschool to 7): Highland Park. 780-532-7429
-      - **[Charles Spencer High School](https://charlesspencer.gppsd.ab.ca/)** (9 to 12). 780-513-3200
-      - **[Grande Prairie Composite High School](https://gpcomposite.gppsd.ab.ca/)** (9 to 12, International Baccalaureate). 780-532-7721
-      - **[Bridge Network Outreach School](https://bridgenetwork.gppsd.ab.ca/)** (10 to 12). 780-539-0950
-
-      ### Grande Prairie & District Catholic Schools
-
-      Catholic schools in Grande Prairie, Sexsmith and Beaverlodge. Division office: 780-532-3013. [Register](https://www.gpcsd.ca/apps/pages/StudentRegistration) or [check school boundaries](https://www.gpcsd.ca/apps/pages/SchoolBoundaries). Details are from the division's [school list](https://www.gpcsd.ca/apps/pages/schools).
-
-      - **École St-Gérard** (Pre-K to 9, French Immersion): 9724 88 Avenue, Grande Prairie. 780-532-5398
-      - **École Catholique Louis Riel** (Pre-K to 9, French Immersion): 6201 Tamarack Drive, Grande Prairie. 780-832-0306
-      - **Holy Cross Catholic School** (Pre-K to 8): 11011 90 Street, Grande Prairie. 780-538-0077
-      - **Mother Teresa Catholic School** (Pre-K to 6, Montessori): 7501 Willow Drive, Grande Prairie. 780-814-9732
-      - **St. Catherine Catholic School** (Pre-K to 8, Integrated Fine Arts): 12815 104A Street, Grande Prairie. 780-532-0010
-      - **St. Clement Catholic School** (Pre-K to 8): 9636 109 Avenue, Grande Prairie. 780-532-4698
-      - **St. Kateri Catholic School** (Pre-K to 8): 7906 Mission Heights Drive, Grande Prairie. 780-538-2883
-      - **St. Patrick Catholic School** (Pre-K to 8, STEM): 7810 Poplar Drive, Grande Prairie. 780-539-7434
-      - **St. John Paul II Catholic School** (9 to 12, with French Immersion in 10 to 12): 300 Arbour Hills Boulevard, Grande Prairie. 780-832-4000
-      - **St. Joseph Catholic High School** (9 to 12): 10520 68 Avenue, Grande Prairie. 780-532-7779
-      - **St. John Bosco Catholic School** (10 to 12, student outreach): Grande Prairie. Call the division office.
-      - **St. Mary's Catholic School** (Pre-K to 8): 9001 103 Street, Sexsmith. 780-568-3631
-      - **St. Mary Catholic School** (Pre-K to 9): 100 13 Street, Beaverlodge. 780-354-2944
-
-      ### Peace Wapiti Public School Division
-
-      Public schools in the communities around the city. [Division website](https://www.pwpsd.ca/). Schools and phone numbers are from the [City of Grande Prairie's GP Guide](https://cityofgp.com/sites/default/files/docs/ecdev/GP%20Guide%20-%20English%202025%20-%20WEB.pdf).
-
-      - **Clairmont:** Clairmont Community School, 780-567-4698
-      - **Sexsmith:** Robert W. Zahara School, 780-568-3823. Sexsmith Secondary School, 780-568-3642
-      - **Beaverlodge:** Beaverlodge Elementary School, 780-354-2446. Beaverlodge Regional High School, 780-354-2189
-      - **Grande Prairie area:** Harry Balfour School, 780-532-9276. Whispering Ridge Community School, 587-771-2180. Peace Wapiti Academy, 780-513-9504
-      - **Wembley:** Wembley Elementary School (JK to 3), 780-766-2294. Helen E. Taylor School (4 to 9), 780-766-9103
-      - **Bezanson:** Bezanson School, 780-532-6490
-      - **La Glace:** La Glace School, 780-568-2430
-      - **Hythe:** Hythe Regional School, 780-356-3934
-      - **Teepee Creek:** Teepee Creek School, 780-568-2265
-      - **Grovedale:** Penson School, 780-532-6390
-
-      ### Francophone and post-secondary
-
-      - **École Nouvelle Frontière** is Grande Prairie's francophone school, part of the [NorthWest Francophone Education Region](https://csno.ab.ca). Board office: 780-624-8855
-      - **[Northwestern Polytechnic](https://www.nwpolytech.ca/)** is based in Grande Prairie, for diplomas, certificates, university transfer and trades. ([City of Grande Prairie](https://cityofgp.com/economic-development/lifestyle-community/education))
-    note: "Todd, please check the school locations. The public school locations come from the division's 2022 boundary map, and I described a few by street where the map had no neighbourhood name (Avondale, Hillside, Swanavon). For the Catholic schools and the three public high schools I could only confirm street addresses or phone numbers, not neighbourhood names. Tell me the neighbourhood for each and I'll add it."
-
   - id: next
     type: links
     heading: Planning a move here?
     items:
+      - title: Utilities, internet and schools
+        text: Company names and contact details for utilities, phone and internet, plus every school and where it is.
+        url: /resources/
       - title: Medical professional relocation
         text: Moving here for a healthcare job? Plan your home search by video or phone before you arrive.
         url: /medical-relocation/
@@ -180,7 +57,7 @@ sections:
   - id: sources
     type: sources
     heading: Sources
-    intro: Utilities, internet and schools checked November 11, 2026. Health care and driving checked October 10, 2026. Rules and contacts change, so confirm the details with each organization.
+    intro: Checked October 10, 2026. Rules and contacts change, so confirm the details with each organization.
     items:
       - title: Apply for health care coverage if you move to Alberta
         publisher: Government of Alberta
@@ -197,51 +74,6 @@ sections:
       - title: Register a vehicle in Alberta
         publisher: Government of Alberta
         url: https://www.alberta.ca/register-vehicle
-      - title: Utility Bylaw C-1365 (office consolidation, effective March 1, 2026)
-        publisher: City of Grande Prairie
-        url: https://cityofgp.com/sites/default/files/2026-01/C-1365%20Utility%20Bylaw%20-%20Office%20Consolidation%20-%20Effective%20March%201,%202026.pdf
-      - title: Apply for water or sewer services
-        publisher: County of Grande Prairie
-        url: https://www.countygp.ab.ca/home-property-environment/water-and-sewer-services/apply-for-water-or-sewer-services/
-      - title: Welcome to new residents
-        publisher: Town of Sexsmith
-        url: https://sexsmith.ca/welcome-to-new-residents
-      - title: Open, close or transfer account
-        publisher: Aquatera
-        url: https://www.aquatera.ca/billing-rates-payments/open-close-transfer-account
-      - title: Grande Prairie recycling
-        publisher: Circular Materials
-        url: https://www.circularmaterials.ca/resident-communities/grande-prairie/
       - title: Retailers and distributors
         publisher: Utilities Consumer Advocate
         url: https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/
-      - title: GP Guide 2025 (utilities, communication providers, schools)
-        publisher: City of Grande Prairie
-        url: https://cityofgp.com/sites/default/files/docs/ecdev/GP%20Guide%20-%20English%202025%20-%20WEB.pdf
-      - title: Utilities and Internet
-        publisher: County of Grande Prairie
-        url: https://www.countygp.ab.ca/home-property-environment/utilities-and-internet/
-      - title: Cancelling services or starting services
-        publisher: Town of Beaverlodge
-        url: https://beaverlodge.ca/?p=1962
-      - title: Contact ATCO Electric
-        publisher: ATCO Electric
-        url: https://electric.atco.com/en-ca/about-us/contact.html
-      - title: Moving (emergency numbers)
-        publisher: ATCO Energy
-        url: https://www.atcoenergy.com/customer-care/moving
-      - title: School Directory
-        publisher: Grande Prairie Public School Division
-        url: https://www.gppsd.ab.ca/our-division/our-schools/school-directory
-      - title: Elementary Boundary Map (effective September 2022)
-        publisher: Grande Prairie Public School Division
-        url: https://www.gppsd.ab.ca/download/435841
-      - title: Schools
-        publisher: Grande Prairie & District Catholic Schools
-        url: https://www.gpcsd.ca/apps/pages/schools
-      - title: Education
-        publisher: City of Grande Prairie
-        url: https://cityofgp.com/economic-development/lifestyle-community/education
-      - title: Peace Wapiti Public School Division
-        publisher: Peace Wapiti Public School Division
-        url: https://www.pwpsd.ca/
