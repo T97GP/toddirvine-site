@@ -4,7 +4,7 @@ parent:
   label: Resources
   url: /resources/
 title: New to Grande Prairie? What to set up when you move | Todd Irvine
-description: Health care, your driver's licence and your vehicle. What to set up when you move to Grande Prairie, Alberta, with links to the official pages.
+description: What to set up when you move to Grande Prairie, Alberta, starting with health care, with links to the official pages.
 
 heading: New to Grande Prairie? Here's what to set up.
 intro: The main things to sort out when you move here from another province or country, with links to the official pages so you can check the details for your situation.
@@ -34,15 +34,6 @@ sections:
 
       **Hospital.** Grande Prairie Regional Hospital, at 11205 110 Street, has a 24/7 emergency department. ([Alberta Health Services](https://www.albertahealthservices.ca/FindHealth/facility.aspx?id=1071132))
 
-  - id: driving
-    type: text
-    tone: stone
-    heading: Your driver's licence and vehicle
-    body: |
-      **Exchange your driver's licence within 90 days of becoming a resident.** Take it to an Alberta registry agent, with proof that you live in Alberta and proof of your legal status in Canada. Your old licence is surrendered and won't be returned. Licences from the United States, and from countries that have an exchange agreement with Alberta, can usually be exchanged without a road test. ([Alberta.ca](https://www.alberta.ca/exchange-non-alberta-licences))
-
-      **Register your vehicle in Alberta within 90 days of moving here.** You'll need Alberta insurance first. A vehicle bought elsewhere in Canada may need an Alberta out-of-province inspection before it can be registered, so ask the registry agent whether yours does. ([Alberta.ca](https://www.alberta.ca/register-vehicle))
-
   - id: next
     type: links
     heading: Planning a move here?
@@ -71,12 +62,3 @@ sections:
       - title: Grande Prairie Regional Hospital
         publisher: Alberta Health Services
         url: https://www.albertahealthservices.ca/FindHealth/facility.aspx?id=1071132
-      - title: Exchange a licence from outside Alberta
-        publisher: Government of Alberta
-        url: https://www.alberta.ca/exchange-non-alberta-licences
-      - title: Register a vehicle in Alberta
-        publisher: Government of Alberta
-        url: https://www.alberta.ca/register-vehicle
-      - title: Retailers and distributors
-        publisher: Utilities Consumer Advocate
-        url: https://ucahelps.alberta.ca/utility-choices/retailers-and-distributors/
