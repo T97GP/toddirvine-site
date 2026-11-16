@@ -258,9 +258,6 @@ sections:
     type: links
     heading: Guides
     items:
-      - title: New to Grande Prairie
-        text: What to set up when you move here, starting with health care.
-        url: /resources/new-to-grande-prairie/
       - title: How buying works here
         text: The steps from your first call to getting your keys.
         url: /buyers/
