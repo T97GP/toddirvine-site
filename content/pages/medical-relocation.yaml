@@ -10,8 +10,6 @@ actions:
     url: /book-a-call/
   - label: Call Now
     url: tel:+15873437310
-  - label: Read the area guides
-    url: /areas/
 
 sections:
   - id: plan

@@ -40,8 +40,6 @@ nav:
         url: /resources/
       - label: About
         url: /about/
-      - label: Areas
-        url: /areas/
       - label: Contact
         url: /book-a-call/
 
