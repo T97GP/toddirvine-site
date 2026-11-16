@@ -38,8 +38,6 @@ nav:
     children:
       - label: Resources
         url: /resources/
-      - label: About
-        url: /about/
       - label: Contact
         url: /book-a-call/
 
